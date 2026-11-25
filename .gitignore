@@ -8,3 +8,7 @@ __pycache__/
 *.tmp
 ~$*.docx
 *.log
+.vercel
+
+# vercel
+.vercel/
