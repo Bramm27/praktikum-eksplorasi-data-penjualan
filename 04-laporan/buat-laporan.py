@@ -813,6 +813,7 @@ h2("Cara Menjalankan Ulang")
 para("Seluruh proses dapat diulang dari folder proyek dengan tiga perintah berikut:", space_after=4)
 for cmd in [".venv/bin/python 02-analisis/analisis.py",
             ".venv/bin/python 03-dashboard/buat-dashboard.py",
+            ".venv/bin/python 04-laporan/buat-langkah.py",
             ".venv/bin/python 04-laporan/buat-laporan.py"]:
     p = doc.add_paragraph()
     p.paragraph_format.left_indent = Cm(0.8)
