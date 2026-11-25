@@ -1,0 +1,10 @@
+# lingkungan
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# keluaran sementara
+*.tmp
+~$*.docx
+*.log

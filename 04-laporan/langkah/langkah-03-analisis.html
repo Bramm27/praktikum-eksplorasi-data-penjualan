@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="id"><head><meta charset="utf-8">
+<style>
+body{margin:0;background:#eef1f6;font-family:"Inter","Segoe UI",system-ui,sans-serif;padding:26px}
+.box{max-width:1180px;margin:0 auto;background:#fff;border-radius:16px;padding:22px 24px;
+  box-shadow:0 10px 30px -18px rgba(15,23,42,.35)}
+h2{margin:0 0 4px;font-size:16px;color:#0f172a}
+p{margin:0 0 14px;font-size:12.5px;color:#64748b}
+.term{background:#0b1120;border-radius:12px;padding:16px 18px;overflow:hidden;
+  box-shadow:inset 0 0 0 1px #1e293b}
+.bar{display:flex;gap:7px;margin-bottom:12px}
+.bar i{width:10px;height:10px;border-radius:50%;display:block}
+pre{margin:0;color:#e2e8f0;font-family:"JetBrains Mono","Fira Code",Consolas,"DejaVu Sans Mono",monospace;
+  font-size:12.2px;line-height:1.62;white-space:pre-wrap;word-break:break-word}
+.cmd{color:#7dd3fc;font-weight:700}
+.err{color:#fca5a5}
+.meta{font-size:11px;color:#94a3b8;margin-top:10px}
+</style></head><body>
+<div class="box">
+  <h2>Langkah 3 — Menjalankan skrip analisis</h2>
+  <p>Statistik deskriptif, RFM + K-Means, dan peramalan SARIMA dalam satu skrip.</p>
+  <div class="term">
+    <div class="bar"><i style="background:#ef4444"></i><i style="background:#f59e0b"></i><i style="background:#22c55e"></i></div>
+    <pre>{
+ "ringkasan": {
+  "total_penjualan": 4311513600,
+  "total_profit": 1757346600,
+  "total_qty": 21660,
+  "jumlah_transaksi": 10000,
+  "jumlah_pelanggan": 1000,
+  "jumlah_produk": 25,
+  "rata_transaksi": 431151,
+  "margin_pct": 40.76,
+  "transaksi_selesai": 8766,
+  "transaksi_batal": 324
+ },
+ "clustering": {
+  "k": 4,
+  "silhouette": 0.2824,
+  "dbi": 1.0774,
+  "profil": [
+   {
+    "Cluster": 0,
+    "jumlah": 269,
+    "recency_rata": 49.62,
+    "frequency_rata": 13.3,
+    "monetary_rata": 6511361.52,
+    "monetary_total": 1751556250.0,
+    "porsi_pelanggan_pct": 26.9,
+    "porsi_penjualan_pct": 40.63,
+    "segmen": "Pelanggan Bernilai Tinggi"
+   },
+   {
+    "Cluster": 1,
+    "jumlah": 222,
+    "recency_rata": 10.89,
+    "frequency_rata": 10.19,
+    "monetary_rata": 4210511.04,
+    "monetary_total": 934733450.0,
+    "porsi_pelanggan_pct": 22.2,
+    "porsi_penjualan_pct": 21.68,
+    "segmen": "Pelanggan Potensial"
+   },
+   {
+    "Cluster": 2,
+    "jumlah": 369,
+    "recency_rata": 99.57,
+    "frequency_rata": 9.14,
+    "monetary_rata": 3712032.52,
+    "monetary_total": 1369740000.0,
+    "porsi_pelanggan_pct": 36.9,
+    "porsi_penjualan_pct": 31.77,
+    "segmen": "Pelanggan Bernilai Sedang"
+   },
+   {
+    "Cluster": 3,
+    "jumlah": 140,
+    "recency_rata": 106.34,
+    "frequency_rata": 5.63,
+    "monetary_rata": 1824885.0,
+    "monetary_total": 255483900.0,
+    "porsi_pelanggan_pct": 14.0,
+    "porsi_penjualan_pct": 5.93,
+    "segmen": "Pelanggan Berisiko Churn"
+   }
+  ]
+ },
+ "forecast": {
+  "terpilih": "SARIMA(0,1,1)(0,1,0,12)",
+  "mape": 3.02,
+  "kandidat": [
+   {
+    "metode": "SARIMA(0,1,1)(0,1,0,12)",
+    "mape": 3.02,
+    "prediksi": [
+     205008759,
+     191589459,
+     194747459
+    ]
+   },
+   {
+    "metode": "SARIMA(1,1,1)(0,0,1,12)",
+    "mape": 3.78,
+    "prediksi": [
+     203632033,
+     197110069,
+     197806911
+    ]
+   },
+   {
+    "metode": "Regresi tren + dummy bulan",
+    "mape": 5.67,
+    "prediksi": [
+     198123237,
+     178872487,
+     223821987
+    ]
+   },
+   {
+    "metode": "Holt-Winters (trend teredam)",
+    "mape": 8.95,
+    "prediksi": [
+     208655820,
+     209374729,
+     209949855
+    ]
+   },
+   {
+    "metode": "Holt-Winters (trend aditif, tanpa musiman)",
+    "mape": 9.98,
+    "prediksi": [
+     210142016,
+     211290463,
+     212438910
+    ]
+   },
+   {
+    "metode": "Naif musiman (bulan sama tahun lalu)",
+    "mape": 10.83,
+    "prediksi": [
+     179493450,
+     166074150,
+     169232150
+    ]
+   }
+  ],
+  "prediksi": [
+   239487736,
+   274790736,
+   214920886
+  ],
+  "label": [
+   "2026-11",
+   "2026-12",
+   "2027-01"
+  ]
+ }
+}</pre>
+  </div>
+  <div class="meta">Keluaran terminal dari sesi praktikum.</div>
+</div>
+</body></html>

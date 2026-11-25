@@ -1,0 +1,408 @@
+{
+ "periode": {
+  "awal": "2025-01-01",
+  "akhir": "2026-10-31",
+  "jumlah_bulan": 22
+ },
+ "kpi": {
+  "total_penjualan": 4311513600,
+  "total_profit": 1757346600,
+  "total_qty": 21660,
+  "jumlah_transaksi": 10000,
+  "jumlah_pelanggan": 1000,
+  "jumlah_produk": 25,
+  "rata_transaksi": 431151,
+  "margin_pct": 40.76,
+  "transaksi_selesai": 8766,
+  "transaksi_batal": 324
+ },
+ "bulanan": [
+  {
+   "Bulan": "2025-01",
+   "penjualan": 180369400,
+   "profit": 73588400,
+   "qty": 885,
+   "trx": 416
+  },
+  {
+   "Bulan": "2025-02",
+   "penjualan": 148744900,
+   "profit": 61736900,
+   "qty": 777,
+   "trx": 366
+  },
+  {
+   "Bulan": "2025-03",
+   "penjualan": 213620500,
+   "profit": 86670500,
+   "qty": 1095,
+   "trx": 503
+  },
+  {
+   "Bulan": "2025-04",
+   "penjualan": 209970350,
+   "profit": 86204350,
+   "qty": 1102,
+   "trx": 481
+  },
+  {
+   "Bulan": "2025-05",
+   "penjualan": 181917700,
+   "profit": 72589700,
+   "qty": 845,
+   "trx": 388
+  },
+  {
+   "Bulan": "2025-06",
+   "penjualan": 162666950,
+   "profit": 67244950,
+   "qty": 838,
+   "trx": 374
+  },
+  {
+   "Bulan": "2025-07",
+   "penjualan": 207616450,
+   "profit": 85611450,
+   "qty": 1087,
+   "trx": 488
+  },
+  {
+   "Bulan": "2025-08",
+   "penjualan": 179493450,
+   "profit": 74208450,
+   "qty": 895,
+   "trx": 420
+  },
+  {
+   "Bulan": "2025-09",
+   "penjualan": 166074150,
+   "profit": 67185150,
+   "qty": 808,
+   "trx": 373
+  },
+  {
+   "Bulan": "2025-10",
+   "penjualan": 169232150,
+   "profit": 69691150,
+   "qty": 881,
+   "trx": 404
+  },
+  {
+   "Bulan": "2025-11",
+   "penjualan": 216408850,
+   "profit": 88728850,
+   "qty": 1085,
+   "trx": 535
+  },
+  {
+   "Bulan": "2025-12",
+   "penjualan": 251711850,
+   "profit": 102061850,
+   "qty": 1265,
+   "trx": 603
+  },
+  {
+   "Bulan": "2026-01",
+   "penjualan": 191842000,
+   "profit": 78228000,
+   "qty": 965,
+   "trx": 474
+  },
+  {
+   "Bulan": "2026-02",
+   "penjualan": 171635500,
+   "profit": 69501500,
+   "qty": 860,
+   "trx": 410
+  },
+  {
+   "Bulan": "2026-03",
+   "penjualan": 222653100,
+   "profit": 90522100,
+   "qty": 1149,
+   "trx": 516
+  },
+  {
+   "Bulan": "2026-04",
+   "penjualan": 231396700,
+   "profit": 93388700,
+   "qty": 1143,
+   "trx": 508
+  },
+  {
+   "Bulan": "2026-05",
+   "penjualan": 198748450,
+   "profit": 81205450,
+   "qty": 965,
+   "trx": 437
+  },
+  {
+   "Bulan": "2026-06",
+   "penjualan": 198420300,
+   "profit": 78435300,
+   "qty": 970,
+   "trx": 442
+  },
+  {
+   "Bulan": "2026-07",
+   "penjualan": 230759700,
+   "profit": 94276700,
+   "qty": 1130,
+   "trx": 548
+  },
+  {
+   "Bulan": "2026-08",
+   "penjualan": 203600900,
+   "profit": 82058900,
+   "qty": 962,
+   "trx": 428
+  },
+  {
+   "Bulan": "2026-09",
+   "penjualan": 178195650,
+   "profit": 74087650,
+   "qty": 931,
+   "trx": 440
+  },
+  {
+   "Bulan": "2026-10",
+   "penjualan": 196434600,
+   "profit": 80120600,
+   "qty": 1022,
+   "trx": 446
+  }
+ ],
+ "kota": [
+  {
+   "Kota": "Jakarta",
+   "penjualan": 1109815700,
+   "profit": 454781700,
+   "qty": 5605,
+   "trx": 2594,
+   "pelanggan": 929
+  },
+  {
+   "Kota": "Surabaya",
+   "penjualan": 685980300,
+   "profit": 281331300,
+   "qty": 3484,
+   "trx": 1629,
+   "pelanggan": 808
+  },
+  {
+   "Kota": "Bandung",
+   "penjualan": 563584200,
+   "profit": 225812200,
+   "qty": 2806,
+   "trx": 1254,
+   "pelanggan": 708
+  },
+  {
+   "Kota": "Semarang",
+   "penjualan": 359020300,
+   "profit": 144506300,
+   "qty": 1710,
+   "trx": 822,
+   "pelanggan": 555
+  },
+  {
+   "Kota": "Medan",
+   "penjualan": 348031650,
+   "profit": 142752650,
+   "qty": 1764,
+   "trx": 821,
+   "pelanggan": 579
+  },
+  {
+   "Kota": "Makassar",
+   "penjualan": 319327900,
+   "profit": 128839900,
+   "qty": 1602,
+   "trx": 723,
+   "pelanggan": 517
+  },
+  {
+   "Kota": "Yogyakarta",
+   "penjualan": 309760850,
+   "profit": 126293850,
+   "qty": 1530,
+   "trx": 707,
+   "pelanggan": 514
+  },
+  {
+   "Kota": "Denpasar",
+   "penjualan": 250871900,
+   "profit": 103422900,
+   "qty": 1269,
+   "trx": 562,
+   "pelanggan": 434
+  },
+  {
+   "Kota": "Malang",
+   "penjualan": 192808700,
+   "profit": 79833700,
+   "qty": 1034,
+   "trx": 496,
+   "pelanggan": 394
+  },
+  {
+   "Kota": "Balikpapan",
+   "penjualan": 172312100,
+   "profit": 69772100,
+   "qty": 856,
+   "trx": 392,
+   "pelanggan": 328
+  }
+ ],
+ "kategori": [
+  {
+   "Kategori_Produk": "Elektronik",
+   "penjualan": 1240571600,
+   "profit": 435761600,
+   "qty": 3805
+  },
+  {
+   "Kategori_Produk": "Fashion & Aksesoris",
+   "penjualan": 980842500,
+   "profit": 410522500,
+   "qty": 3544
+  },
+  {
+   "Kategori_Produk": "Rumah Tangga",
+   "penjualan": 843184500,
+   "profit": 333787500,
+   "qty": 3735
+  },
+  {
+   "Kategori_Produk": "Kesehatan & Kecantikan",
+   "penjualan": 707019250,
+   "profit": 348978250,
+   "qty": 5674
+  },
+  {
+   "Kategori_Produk": "Makanan & Minuman",
+   "penjualan": 539895750,
+   "profit": 228296750,
+   "qty": 4902
+  }
+ ],
+ "channel": [
+  {
+   "Channel_Penjualan": "Shopee",
+   "penjualan": 1497032400,
+   "trx": 3461
+  },
+  {
+   "Channel_Penjualan": "Tokopedia",
+   "penjualan": 1205181600,
+   "trx": 2749
+  },
+  {
+   "Channel_Penjualan": "TikTok Shop",
+   "penjualan": 662798800,
+   "trx": 1560
+  },
+  {
+   "Channel_Penjualan": "Website Resmi",
+   "penjualan": 551233550,
+   "trx": 1249
+  },
+  {
+   "Channel_Penjualan": "Toko Offline",
+   "penjualan": 395267250,
+   "trx": 981
+  }
+ ],
+ "produk_top": [
+  {
+   "Nama_Produk": "Smartwatch Fitness Tracker",
+   "Kategori_Produk": "Elektronik",
+   "penjualan": 395040500,
+   "qty": 710,
+   "profit": 132340500
+  },
+  {
+   "Nama_Produk": "Air Fryer Digital 4L",
+   "Kategori_Produk": "Rumah Tangga",
+   "penjualan": 314926500,
+   "qty": 374,
+   "profit": 98006500
+  },
+  {
+   "Nama_Produk": "Sepatu Sneakers Kasual",
+   "Kategori_Produk": "Fashion & Aksesoris",
+   "penjualan": 281272500,
+   "qty": 666,
+   "profit": 108112500
+  },
+  {
+   "Nama_Produk": "Earbuds Wireless TWS Pro",
+   "Kategori_Produk": "Elektronik",
+   "penjualan": 264943350,
+   "qty": 807,
+   "profit": 95473350
+  },
+  {
+   "Nama_Produk": "Speaker Bluetooth Portable",
+   "Kategori_Produk": "Elektronik",
+   "penjualan": 224406000,
+   "qty": 571,
+   "profit": 78801000
+  },
+  {
+   "Nama_Produk": "Powerbank Fast Charging 20000mAh",
+   "Kategori_Produk": "Elektronik",
+   "penjualan": 214719000,
+   "qty": 799,
+   "profit": 74894000
+  },
+  {
+   "Nama_Produk": "Tas Ransel Laptop Waterproof",
+   "Kategori_Produk": "Fashion & Aksesoris",
+   "penjualan": 199907500,
+   "qty": 650,
+   "profit": 82907500
+  },
+  {
+   "Nama_Produk": "Kemeja Katun Oxford Pria",
+   "Kategori_Produk": "Fashion & Aksesoris",
+   "penjualan": 197208750,
+   "qty": 978,
+   "profit": 84738750
+  },
+  {
+   "Nama_Produk": "Jam Tangan Kulit Klasik",
+   "Kategori_Produk": "Fashion & Aksesoris",
+   "penjualan": 181450000,
+   "qty": 512,
+   "profit": 76490000
+  },
+  {
+   "Nama_Produk": "Serum Vitamin C Brightening 30ml",
+   "Kategori_Produk": "Kesehatan & Kecantikan",
+   "penjualan": 167252500,
+   "qty": 1200,
+   "profit": 89252500
+  }
+ ],
+ "segmen": {
+  "Reguler": 5164,
+  "Member Silver": 2538,
+  "Member Gold": 1583,
+  "Korporat": 715
+ },
+ "status": {
+  "Selesai": 8766,
+  "Dikirim": 625,
+  "Dibatalkan": 324,
+  "Diproses": 285
+ },
+ "pembayaran": {
+  "QRIS": 2816,
+  "Virtual Account": 2397,
+  "E-Wallet": 2006,
+  "Transfer Bank": 1217,
+  "Kartu Kredit": 886,
+  "COD": 678
+ }
+}

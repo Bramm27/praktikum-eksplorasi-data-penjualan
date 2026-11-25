@@ -1,0 +1,8112 @@
+{
+ "metode": "K-Means pada RFM (log1p + StandardScaler)",
+ "evaluasi": [
+  {
+   "k": 2,
+   "silhouette": 0.3177,
+   "dbi": 1.165,
+   "inertia": 1901.8
+  },
+  {
+   "k": 3,
+   "silhouette": 0.2891,
+   "dbi": 1.1439,
+   "inertia": 1448.3
+  },
+  {
+   "k": 4,
+   "silhouette": 0.2824,
+   "dbi": 1.0774,
+   "inertia": 1161.2
+  },
+  {
+   "k": 5,
+   "silhouette": 0.2623,
+   "dbi": 1.1308,
+   "inertia": 1010.9
+  },
+  {
+   "k": 6,
+   "silhouette": 0.2651,
+   "dbi": 1.0602,
+   "inertia": 888.9
+  }
+ ],
+ "k_terpilih": 4,
+ "silhouette": 0.2824,
+ "dbi": 1.0774,
+ "profil": [
+  {
+   "Cluster": 0,
+   "jumlah": 269,
+   "recency_rata": 49.62,
+   "frequency_rata": 13.3,
+   "monetary_rata": 6511361.52,
+   "monetary_total": 1751556250.0,
+   "porsi_pelanggan_pct": 26.9,
+   "porsi_penjualan_pct": 40.63,
+   "segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Cluster": 1,
+   "jumlah": 222,
+   "recency_rata": 10.89,
+   "frequency_rata": 10.19,
+   "monetary_rata": 4210511.04,
+   "monetary_total": 934733450.0,
+   "porsi_pelanggan_pct": 22.2,
+   "porsi_penjualan_pct": 21.68,
+   "segmen": "Pelanggan Potensial"
+  },
+  {
+   "Cluster": 2,
+   "jumlah": 369,
+   "recency_rata": 99.57,
+   "frequency_rata": 9.14,
+   "monetary_rata": 3712032.52,
+   "monetary_total": 1369740000.0,
+   "porsi_pelanggan_pct": 36.9,
+   "porsi_penjualan_pct": 31.77,
+   "segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Cluster": 3,
+   "jumlah": 140,
+   "recency_rata": 106.34,
+   "frequency_rata": 5.63,
+   "monetary_rata": 1824885.0,
+   "monetary_total": 255483900.0,
+   "porsi_pelanggan_pct": 14.0,
+   "porsi_penjualan_pct": 5.93,
+   "segmen": "Pelanggan Berisiko Churn"
+  }
+ ],
+ "centroid": [
+  {
+   "Recency": 39.44,
+   "Frequency": 13.11,
+   "Monetary": 6258323.72,
+   "Cluster": 0
+  },
+  {
+   "Recency": 8.29,
+   "Frequency": 9.97,
+   "Monetary": 3966452.68,
+   "Cluster": 1
+  },
+  {
+   "Recency": 84.39,
+   "Frequency": 9.02,
+   "Monetary": 3546773.96,
+   "Cluster": 2
+  },
+  {
+   "Recency": 77.16,
+   "Frequency": 5.42,
+   "Monetary": 1666721.54,
+   "Cluster": 3
+  }
+ ],
+ "sebaran": [
+  {
+   "Nama_Pelanggan": "Adi Andriani",
+   "Recency": 43,
+   "Frequency": 4,
+   "Monetary": 633000.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Adi Anggraini",
+   "Recency": 191,
+   "Frequency": 9,
+   "Monetary": 3503600.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Adi Fauzi",
+   "Recency": 60,
+   "Frequency": 10,
+   "Monetary": 2037850.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Adi Gunawan",
+   "Recency": 134,
+   "Frequency": 10,
+   "Monetary": 1737000.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Adi Hakim",
+   "Recency": 39,
+   "Frequency": 12,
+   "Monetary": 4097500.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Adi Hidayat",
+   "Recency": 32,
+   "Frequency": 14,
+   "Monetary": 9430050.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Adi Kusuma",
+   "Recency": 4,
+   "Frequency": 6,
+   "Monetary": 8105000.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Adi Lestari",
+   "Recency": 48,
+   "Frequency": 7,
+   "Monetary": 2831350.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Adi Mahendra",
+   "Recency": 3,
+   "Frequency": 10,
+   "Monetary": 3986050.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Adi Nugroho",
+   "Recency": 205,
+   "Frequency": 8,
+   "Monetary": 5074750.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Adi Permata",
+   "Recency": 59,
+   "Frequency": 9,
+   "Monetary": 4066500.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Adi Pratama",
+   "Recency": 1,
+   "Frequency": 12,
+   "Monetary": 4018250.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Adi Purnama",
+   "Recency": 77,
+   "Frequency": 6,
+   "Monetary": 2708000.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Adi Putra",
+   "Recency": 21,
+   "Frequency": 7,
+   "Monetary": 1962750.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Adi Rahmawati",
+   "Recency": 84,
+   "Frequency": 8,
+   "Monetary": 1858250.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Adi Ramadhan",
+   "Recency": 251,
+   "Frequency": 9,
+   "Monetary": 3803500.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Adi Santoso",
+   "Recency": 91,
+   "Frequency": 7,
+   "Monetary": 3637000.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Adi Saputra",
+   "Recency": 13,
+   "Frequency": 12,
+   "Monetary": 6687950.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Adi Setiawan",
+   "Recency": 10,
+   "Frequency": 9,
+   "Monetary": 9151750.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Adi Siregar",
+   "Recency": 17,
+   "Frequency": 10,
+   "Monetary": 7805000.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Adi Suryadi",
+   "Recency": 2,
+   "Frequency": 8,
+   "Monetary": 4741500.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Adi Susanto",
+   "Recency": 33,
+   "Frequency": 7,
+   "Monetary": 2968800.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Adi Utomo",
+   "Recency": 44,
+   "Frequency": 8,
+   "Monetary": 1985500.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Adi Wibowo",
+   "Recency": 152,
+   "Frequency": 10,
+   "Monetary": 3866450.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Adi Wijaya",
+   "Recency": 20,
+   "Frequency": 12,
+   "Monetary": 5047600.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Anisa Andriani",
+   "Recency": 38,
+   "Frequency": 7,
+   "Monetary": 5591500.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Anisa Anggraini",
+   "Recency": 15,
+   "Frequency": 9,
+   "Monetary": 2924000.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Anisa Fauzi",
+   "Recency": 18,
+   "Frequency": 11,
+   "Monetary": 3826500.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Anisa Gunawan",
+   "Recency": 158,
+   "Frequency": 7,
+   "Monetary": 7767950.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Anisa Hakim",
+   "Recency": 109,
+   "Frequency": 9,
+   "Monetary": 3965000.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Anisa Hidayat",
+   "Recency": 109,
+   "Frequency": 9,
+   "Monetary": 3456250.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Anisa Kusuma",
+   "Recency": 107,
+   "Frequency": 7,
+   "Monetary": 1343750.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Anisa Lestari",
+   "Recency": 24,
+   "Frequency": 9,
+   "Monetary": 4063000.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Anisa Mahendra",
+   "Recency": 43,
+   "Frequency": 8,
+   "Monetary": 2409750.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Anisa Nugroho",
+   "Recency": 15,
+   "Frequency": 7,
+   "Monetary": 1216750.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Anisa Permata",
+   "Recency": 23,
+   "Frequency": 5,
+   "Monetary": 1280700.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Anisa Pratama",
+   "Recency": 22,
+   "Frequency": 12,
+   "Monetary": 4903000.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Anisa Purnama",
+   "Recency": 85,
+   "Frequency": 11,
+   "Monetary": 6156900.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Anisa Putra",
+   "Recency": 27,
+   "Frequency": 8,
+   "Monetary": 3062750.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Anisa Rahmawati",
+   "Recency": 55,
+   "Frequency": 10,
+   "Monetary": 2768100.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Anisa Ramadhan",
+   "Recency": 1,
+   "Frequency": 10,
+   "Monetary": 6300550.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Anisa Santoso",
+   "Recency": 22,
+   "Frequency": 12,
+   "Monetary": 4322350.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Anisa Saputra",
+   "Recency": 70,
+   "Frequency": 11,
+   "Monetary": 3963600.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Anisa Setiawan",
+   "Recency": 77,
+   "Frequency": 8,
+   "Monetary": 2309100.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Anisa Siregar",
+   "Recency": 17,
+   "Frequency": 8,
+   "Monetary": 2826100.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Anisa Suryadi",
+   "Recency": 97,
+   "Frequency": 9,
+   "Monetary": 2552350.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Anisa Susanto",
+   "Recency": 51,
+   "Frequency": 8,
+   "Monetary": 2719050.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Anisa Utomo",
+   "Recency": 33,
+   "Frequency": 10,
+   "Monetary": 3627600.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Anisa Wibowo",
+   "Recency": 214,
+   "Frequency": 9,
+   "Monetary": 2680000.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Anisa Wijaya",
+   "Recency": 20,
+   "Frequency": 16,
+   "Monetary": 7027050.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Bagas Andriani",
+   "Recency": 65,
+   "Frequency": 7,
+   "Monetary": 4194550.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Bagas Anggraini",
+   "Recency": 46,
+   "Frequency": 8,
+   "Monetary": 4697000.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Bagas Fauzi",
+   "Recency": 60,
+   "Frequency": 7,
+   "Monetary": 1041600.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Bagas Gunawan",
+   "Recency": 128,
+   "Frequency": 12,
+   "Monetary": 4270750.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Bagas Hakim",
+   "Recency": 16,
+   "Frequency": 12,
+   "Monetary": 4787300.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Bagas Hidayat",
+   "Recency": 160,
+   "Frequency": 7,
+   "Monetary": 3517450.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Bagas Kusuma",
+   "Recency": 33,
+   "Frequency": 10,
+   "Monetary": 6739050.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Bagas Lestari",
+   "Recency": 7,
+   "Frequency": 12,
+   "Monetary": 4789250.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Bagas Mahendra",
+   "Recency": 25,
+   "Frequency": 14,
+   "Monetary": 9615700.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Bagas Nugroho",
+   "Recency": 13,
+   "Frequency": 10,
+   "Monetary": 3730750.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Bagas Permata",
+   "Recency": 81,
+   "Frequency": 15,
+   "Monetary": 4465500.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Bagas Pratama",
+   "Recency": 68,
+   "Frequency": 10,
+   "Monetary": 3576500.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Bagas Purnama",
+   "Recency": 85,
+   "Frequency": 8,
+   "Monetary": 1863500.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Bagas Putra",
+   "Recency": 20,
+   "Frequency": 13,
+   "Monetary": 4221000.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Bagas Rahmawati",
+   "Recency": 87,
+   "Frequency": 10,
+   "Monetary": 5812750.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Bagas Ramadhan",
+   "Recency": 74,
+   "Frequency": 12,
+   "Monetary": 6697750.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Bagas Santoso",
+   "Recency": 53,
+   "Frequency": 8,
+   "Monetary": 2896000.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Bagas Saputra",
+   "Recency": 51,
+   "Frequency": 8,
+   "Monetary": 4564000.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Bagas Setiawan",
+   "Recency": 167,
+   "Frequency": 7,
+   "Monetary": 1957250.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Bagas Siregar",
+   "Recency": 109,
+   "Frequency": 7,
+   "Monetary": 3167400.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Bagas Suryadi",
+   "Recency": 48,
+   "Frequency": 6,
+   "Monetary": 902250.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Bagas Susanto",
+   "Recency": 137,
+   "Frequency": 5,
+   "Monetary": 1040250.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Bagas Utomo",
+   "Recency": 125,
+   "Frequency": 5,
+   "Monetary": 3527500.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Bagas Wibowo",
+   "Recency": 20,
+   "Frequency": 9,
+   "Monetary": 3024750.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Bagas Wijaya",
+   "Recency": 59,
+   "Frequency": 13,
+   "Monetary": 6947750.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Budi Andriani",
+   "Recency": 76,
+   "Frequency": 5,
+   "Monetary": 3116500.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Budi Anggraini",
+   "Recency": 33,
+   "Frequency": 6,
+   "Monetary": 2180750.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Budi Fauzi",
+   "Recency": 57,
+   "Frequency": 12,
+   "Monetary": 6070250.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Budi Gunawan",
+   "Recency": 46,
+   "Frequency": 12,
+   "Monetary": 3876850.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Budi Hakim",
+   "Recency": 34,
+   "Frequency": 14,
+   "Monetary": 4308250.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Budi Hidayat",
+   "Recency": 2,
+   "Frequency": 12,
+   "Monetary": 3588300.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Budi Kusuma",
+   "Recency": 111,
+   "Frequency": 7,
+   "Monetary": 2815000.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Budi Lestari",
+   "Recency": 18,
+   "Frequency": 10,
+   "Monetary": 2217500.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Budi Mahendra",
+   "Recency": 76,
+   "Frequency": 12,
+   "Monetary": 5439100.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Budi Nugroho",
+   "Recency": 54,
+   "Frequency": 9,
+   "Monetary": 2919100.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Budi Permata",
+   "Recency": 60,
+   "Frequency": 5,
+   "Monetary": 1194000.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Budi Pratama",
+   "Recency": 66,
+   "Frequency": 5,
+   "Monetary": 3943000.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Budi Purnama",
+   "Recency": 175,
+   "Frequency": 5,
+   "Monetary": 3548000.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Budi Putra",
+   "Recency": 20,
+   "Frequency": 9,
+   "Monetary": 2305250.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Budi Rahmawati",
+   "Recency": 50,
+   "Frequency": 12,
+   "Monetary": 5905350.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Budi Ramadhan",
+   "Recency": 66,
+   "Frequency": 10,
+   "Monetary": 4154750.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Budi Santoso",
+   "Recency": 76,
+   "Frequency": 8,
+   "Monetary": 4596400.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Budi Saputra",
+   "Recency": 94,
+   "Frequency": 9,
+   "Monetary": 5138750.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Budi Setiawan",
+   "Recency": 50,
+   "Frequency": 11,
+   "Monetary": 8299400.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Budi Siregar",
+   "Recency": 14,
+   "Frequency": 14,
+   "Monetary": 4160000.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Budi Suryadi",
+   "Recency": 127,
+   "Frequency": 10,
+   "Monetary": 3449750.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Budi Susanto",
+   "Recency": 57,
+   "Frequency": 13,
+   "Monetary": 6622600.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Budi Utomo",
+   "Recency": 20,
+   "Frequency": 10,
+   "Monetary": 6349500.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Budi Wibowo",
+   "Recency": 13,
+   "Frequency": 10,
+   "Monetary": 4105750.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Budi Wijaya",
+   "Recency": 106,
+   "Frequency": 7,
+   "Monetary": 4872250.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Citra Andriani",
+   "Recency": 22,
+   "Frequency": 13,
+   "Monetary": 5263500.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Citra Anggraini",
+   "Recency": 20,
+   "Frequency": 12,
+   "Monetary": 5047700.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Citra Fauzi",
+   "Recency": 5,
+   "Frequency": 9,
+   "Monetary": 2559000.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Citra Gunawan",
+   "Recency": 48,
+   "Frequency": 10,
+   "Monetary": 5137250.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Citra Hakim",
+   "Recency": 21,
+   "Frequency": 11,
+   "Monetary": 2855250.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Citra Hidayat",
+   "Recency": 77,
+   "Frequency": 15,
+   "Monetary": 4262700.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Citra Kusuma",
+   "Recency": 33,
+   "Frequency": 13,
+   "Monetary": 6610100.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Citra Lestari",
+   "Recency": 115,
+   "Frequency": 13,
+   "Monetary": 7188750.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Citra Mahendra",
+   "Recency": 1,
+   "Frequency": 10,
+   "Monetary": 3372250.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Citra Nugroho",
+   "Recency": 110,
+   "Frequency": 11,
+   "Monetary": 7549550.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Citra Permata",
+   "Recency": 21,
+   "Frequency": 9,
+   "Monetary": 3496500.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Citra Pratama",
+   "Recency": 13,
+   "Frequency": 13,
+   "Monetary": 4652250.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Citra Purnama",
+   "Recency": 55,
+   "Frequency": 7,
+   "Monetary": 2296500.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Citra Putra",
+   "Recency": 74,
+   "Frequency": 9,
+   "Monetary": 2977050.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Citra Rahmawati",
+   "Recency": 341,
+   "Frequency": 10,
+   "Monetary": 4480500.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Citra Ramadhan",
+   "Recency": 24,
+   "Frequency": 8,
+   "Monetary": 5351750.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Citra Santoso",
+   "Recency": 26,
+   "Frequency": 7,
+   "Monetary": 2193500.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Citra Saputra",
+   "Recency": 43,
+   "Frequency": 9,
+   "Monetary": 4160500.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Citra Setiawan",
+   "Recency": 30,
+   "Frequency": 15,
+   "Monetary": 7958500.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Citra Siregar",
+   "Recency": 27,
+   "Frequency": 18,
+   "Monetary": 5651000.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Citra Suryadi",
+   "Recency": 21,
+   "Frequency": 13,
+   "Monetary": 5807850.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Citra Susanto",
+   "Recency": 143,
+   "Frequency": 7,
+   "Monetary": 1839600.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Citra Utomo",
+   "Recency": 41,
+   "Frequency": 7,
+   "Monetary": 1775100.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Citra Wibowo",
+   "Recency": 78,
+   "Frequency": 7,
+   "Monetary": 3016350.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Citra Wijaya",
+   "Recency": 309,
+   "Frequency": 3,
+   "Monetary": 1025000.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Dewi Andriani",
+   "Recency": 12,
+   "Frequency": 11,
+   "Monetary": 6259300.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Dewi Anggraini",
+   "Recency": 16,
+   "Frequency": 7,
+   "Monetary": 4121500.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Dewi Fauzi",
+   "Recency": 17,
+   "Frequency": 4,
+   "Monetary": 2458250.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Dewi Gunawan",
+   "Recency": 128,
+   "Frequency": 7,
+   "Monetary": 1482500.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Dewi Hakim",
+   "Recency": 4,
+   "Frequency": 9,
+   "Monetary": 5230100.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Dewi Hidayat",
+   "Recency": 10,
+   "Frequency": 10,
+   "Monetary": 5087850.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Dewi Kusuma",
+   "Recency": 141,
+   "Frequency": 13,
+   "Monetary": 2831750.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Dewi Lestari",
+   "Recency": 141,
+   "Frequency": 11,
+   "Monetary": 3793500.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Dewi Mahendra",
+   "Recency": 100,
+   "Frequency": 9,
+   "Monetary": 4016800.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Dewi Nugroho",
+   "Recency": 38,
+   "Frequency": 10,
+   "Monetary": 2928000.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Dewi Permata",
+   "Recency": 66,
+   "Frequency": 11,
+   "Monetary": 4552850.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Dewi Pratama",
+   "Recency": 150,
+   "Frequency": 9,
+   "Monetary": 4567300.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Dewi Purnama",
+   "Recency": 37,
+   "Frequency": 7,
+   "Monetary": 2939250.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Dewi Putra",
+   "Recency": 226,
+   "Frequency": 12,
+   "Monetary": 3154000.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Dewi Rahmawati",
+   "Recency": 46,
+   "Frequency": 9,
+   "Monetary": 3054250.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Dewi Ramadhan",
+   "Recency": 2,
+   "Frequency": 11,
+   "Monetary": 5208250.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Dewi Santoso",
+   "Recency": 34,
+   "Frequency": 2,
+   "Monetary": 413000.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Dewi Saputra",
+   "Recency": 68,
+   "Frequency": 8,
+   "Monetary": 5272350.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Dewi Setiawan",
+   "Recency": 11,
+   "Frequency": 13,
+   "Monetary": 5678600.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Dewi Siregar",
+   "Recency": 61,
+   "Frequency": 9,
+   "Monetary": 3886000.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Dewi Suryadi",
+   "Recency": 18,
+   "Frequency": 11,
+   "Monetary": 4911000.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Dewi Susanto",
+   "Recency": 34,
+   "Frequency": 7,
+   "Monetary": 2828500.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Dewi Utomo",
+   "Recency": 75,
+   "Frequency": 12,
+   "Monetary": 3190550.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Dewi Wibowo",
+   "Recency": 80,
+   "Frequency": 11,
+   "Monetary": 3386100.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Dewi Wijaya",
+   "Recency": 197,
+   "Frequency": 8,
+   "Monetary": 3008750.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Dian Andriani",
+   "Recency": 54,
+   "Frequency": 10,
+   "Monetary": 7542700.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Dian Anggraini",
+   "Recency": 64,
+   "Frequency": 10,
+   "Monetary": 2743750.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Dian Fauzi",
+   "Recency": 4,
+   "Frequency": 14,
+   "Monetary": 6297600.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Dian Gunawan",
+   "Recency": 91,
+   "Frequency": 9,
+   "Monetary": 8080000.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Dian Hakim",
+   "Recency": 149,
+   "Frequency": 8,
+   "Monetary": 7292500.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Dian Hidayat",
+   "Recency": 173,
+   "Frequency": 9,
+   "Monetary": 3639750.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Dian Kusuma",
+   "Recency": 84,
+   "Frequency": 13,
+   "Monetary": 5602500.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Dian Lestari",
+   "Recency": 22,
+   "Frequency": 14,
+   "Monetary": 9910250.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Dian Mahendra",
+   "Recency": 36,
+   "Frequency": 11,
+   "Monetary": 5479800.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Dian Nugroho",
+   "Recency": 209,
+   "Frequency": 7,
+   "Monetary": 2764750.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Dian Permata",
+   "Recency": 18,
+   "Frequency": 11,
+   "Monetary": 2409700.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Dian Pratama",
+   "Recency": 33,
+   "Frequency": 16,
+   "Monetary": 10006500.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Dian Purnama",
+   "Recency": 79,
+   "Frequency": 14,
+   "Monetary": 5491000.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Dian Putra",
+   "Recency": 36,
+   "Frequency": 13,
+   "Monetary": 3033500.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Dian Rahmawati",
+   "Recency": 10,
+   "Frequency": 10,
+   "Monetary": 5230050.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Dian Ramadhan",
+   "Recency": 13,
+   "Frequency": 10,
+   "Monetary": 3549750.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Dian Santoso",
+   "Recency": 105,
+   "Frequency": 4,
+   "Monetary": 531050.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Dian Saputra",
+   "Recency": 64,
+   "Frequency": 10,
+   "Monetary": 4615050.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Dian Setiawan",
+   "Recency": 108,
+   "Frequency": 4,
+   "Monetary": 1821500.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Dian Siregar",
+   "Recency": 26,
+   "Frequency": 9,
+   "Monetary": 3537350.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Dian Suryadi",
+   "Recency": 88,
+   "Frequency": 5,
+   "Monetary": 2453000.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Dian Susanto",
+   "Recency": 20,
+   "Frequency": 12,
+   "Monetary": 3557600.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Dian Utomo",
+   "Recency": 31,
+   "Frequency": 12,
+   "Monetary": 6067100.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Dian Wibowo",
+   "Recency": 7,
+   "Frequency": 14,
+   "Monetary": 7306150.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Dian Wijaya",
+   "Recency": 60,
+   "Frequency": 14,
+   "Monetary": 5381950.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Eko Andriani",
+   "Recency": 103,
+   "Frequency": 8,
+   "Monetary": 3471000.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Eko Anggraini",
+   "Recency": 117,
+   "Frequency": 9,
+   "Monetary": 5499850.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Eko Fauzi",
+   "Recency": 124,
+   "Frequency": 9,
+   "Monetary": 7720000.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Eko Gunawan",
+   "Recency": 14,
+   "Frequency": 9,
+   "Monetary": 5186250.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Eko Hakim",
+   "Recency": 163,
+   "Frequency": 19,
+   "Monetary": 8369250.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Eko Hidayat",
+   "Recency": 12,
+   "Frequency": 8,
+   "Monetary": 8814600.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Eko Kusuma",
+   "Recency": 303,
+   "Frequency": 4,
+   "Monetary": 1995250.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Eko Lestari",
+   "Recency": 46,
+   "Frequency": 15,
+   "Monetary": 6262000.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Eko Mahendra",
+   "Recency": 98,
+   "Frequency": 5,
+   "Monetary": 1788000.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Eko Nugroho",
+   "Recency": 19,
+   "Frequency": 8,
+   "Monetary": 2026500.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Eko Permata",
+   "Recency": 71,
+   "Frequency": 11,
+   "Monetary": 3688750.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Eko Pratama",
+   "Recency": 18,
+   "Frequency": 9,
+   "Monetary": 5210000.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Eko Purnama",
+   "Recency": 55,
+   "Frequency": 16,
+   "Monetary": 6793200.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Eko Putra",
+   "Recency": 8,
+   "Frequency": 8,
+   "Monetary": 3045500.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Eko Rahmawati",
+   "Recency": 7,
+   "Frequency": 15,
+   "Monetary": 6615750.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Eko Ramadhan",
+   "Recency": 111,
+   "Frequency": 15,
+   "Monetary": 5907900.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Eko Santoso",
+   "Recency": 46,
+   "Frequency": 10,
+   "Monetary": 5146000.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Eko Saputra",
+   "Recency": 124,
+   "Frequency": 8,
+   "Monetary": 8577850.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Eko Setiawan",
+   "Recency": 84,
+   "Frequency": 11,
+   "Monetary": 2751000.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Eko Siregar",
+   "Recency": 21,
+   "Frequency": 11,
+   "Monetary": 6251850.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Eko Suryadi",
+   "Recency": 96,
+   "Frequency": 3,
+   "Monetary": 888250.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Eko Susanto",
+   "Recency": 46,
+   "Frequency": 8,
+   "Monetary": 1909850.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Eko Utomo",
+   "Recency": 52,
+   "Frequency": 8,
+   "Monetary": 4260000.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Eko Wibowo",
+   "Recency": 84,
+   "Frequency": 8,
+   "Monetary": 3310000.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Eko Wijaya",
+   "Recency": 135,
+   "Frequency": 13,
+   "Monetary": 3328250.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Fajar Andriani",
+   "Recency": 37,
+   "Frequency": 11,
+   "Monetary": 4665450.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Fajar Anggraini",
+   "Recency": 19,
+   "Frequency": 12,
+   "Monetary": 6243150.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Fajar Fauzi",
+   "Recency": 34,
+   "Frequency": 10,
+   "Monetary": 7514550.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Fajar Gunawan",
+   "Recency": 81,
+   "Frequency": 13,
+   "Monetary": 4606000.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Fajar Hakim",
+   "Recency": 96,
+   "Frequency": 7,
+   "Monetary": 2858250.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Fajar Hidayat",
+   "Recency": 48,
+   "Frequency": 18,
+   "Monetary": 7577750.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Fajar Kusuma",
+   "Recency": 103,
+   "Frequency": 8,
+   "Monetary": 1822350.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Fajar Lestari",
+   "Recency": 21,
+   "Frequency": 14,
+   "Monetary": 5426700.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Fajar Mahendra",
+   "Recency": 20,
+   "Frequency": 10,
+   "Monetary": 5660750.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Fajar Nugroho",
+   "Recency": 15,
+   "Frequency": 11,
+   "Monetary": 8945250.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Fajar Permata",
+   "Recency": 46,
+   "Frequency": 6,
+   "Monetary": 2261750.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Fajar Pratama",
+   "Recency": 7,
+   "Frequency": 8,
+   "Monetary": 1909450.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Fajar Purnama",
+   "Recency": 119,
+   "Frequency": 9,
+   "Monetary": 3503350.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Fajar Putra",
+   "Recency": 3,
+   "Frequency": 13,
+   "Monetary": 4554700.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Fajar Rahmawati",
+   "Recency": 2,
+   "Frequency": 11,
+   "Monetary": 3264850.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Fajar Ramadhan",
+   "Recency": 1,
+   "Frequency": 13,
+   "Monetary": 4702350.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Fajar Santoso",
+   "Recency": 67,
+   "Frequency": 14,
+   "Monetary": 3011500.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Fajar Saputra",
+   "Recency": 10,
+   "Frequency": 14,
+   "Monetary": 5170100.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Fajar Setiawan",
+   "Recency": 30,
+   "Frequency": 3,
+   "Monetary": 712650.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Fajar Siregar",
+   "Recency": 36,
+   "Frequency": 14,
+   "Monetary": 5798900.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Fajar Suryadi",
+   "Recency": 103,
+   "Frequency": 16,
+   "Monetary": 5235500.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Fajar Susanto",
+   "Recency": 135,
+   "Frequency": 10,
+   "Monetary": 5655150.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Fajar Utomo",
+   "Recency": 42,
+   "Frequency": 11,
+   "Monetary": 5746250.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Fajar Wibowo",
+   "Recency": 82,
+   "Frequency": 7,
+   "Monetary": 2696350.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Fajar Wijaya",
+   "Recency": 41,
+   "Frequency": 7,
+   "Monetary": 3173450.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Farhan Andriani",
+   "Recency": 12,
+   "Frequency": 9,
+   "Monetary": 4610750.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Farhan Anggraini",
+   "Recency": 282,
+   "Frequency": 10,
+   "Monetary": 4069000.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Farhan Fauzi",
+   "Recency": 20,
+   "Frequency": 9,
+   "Monetary": 6148350.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Farhan Gunawan",
+   "Recency": 35,
+   "Frequency": 12,
+   "Monetary": 5760600.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Farhan Hakim",
+   "Recency": 54,
+   "Frequency": 6,
+   "Monetary": 2193600.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Farhan Hidayat",
+   "Recency": 36,
+   "Frequency": 11,
+   "Monetary": 5630900.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Farhan Kusuma",
+   "Recency": 68,
+   "Frequency": 9,
+   "Monetary": 4032000.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Farhan Lestari",
+   "Recency": 55,
+   "Frequency": 6,
+   "Monetary": 2688100.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Farhan Mahendra",
+   "Recency": 91,
+   "Frequency": 6,
+   "Monetary": 2371250.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Farhan Nugroho",
+   "Recency": 43,
+   "Frequency": 9,
+   "Monetary": 3435600.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Farhan Permata",
+   "Recency": 1,
+   "Frequency": 14,
+   "Monetary": 5297050.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Farhan Pratama",
+   "Recency": 25,
+   "Frequency": 10,
+   "Monetary": 3536250.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Farhan Purnama",
+   "Recency": 81,
+   "Frequency": 6,
+   "Monetary": 2540500.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Farhan Putra",
+   "Recency": 167,
+   "Frequency": 15,
+   "Monetary": 9854650.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Farhan Rahmawati",
+   "Recency": 1,
+   "Frequency": 8,
+   "Monetary": 3405250.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Farhan Ramadhan",
+   "Recency": 462,
+   "Frequency": 2,
+   "Monetary": 374500.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Farhan Santoso",
+   "Recency": 355,
+   "Frequency": 8,
+   "Monetary": 2553000.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Farhan Saputra",
+   "Recency": 119,
+   "Frequency": 9,
+   "Monetary": 3195900.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Farhan Setiawan",
+   "Recency": 101,
+   "Frequency": 13,
+   "Monetary": 4064250.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Farhan Siregar",
+   "Recency": 95,
+   "Frequency": 8,
+   "Monetary": 5336750.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Farhan Suryadi",
+   "Recency": 14,
+   "Frequency": 10,
+   "Monetary": 11941450.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Farhan Susanto",
+   "Recency": 69,
+   "Frequency": 12,
+   "Monetary": 3601250.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Farhan Utomo",
+   "Recency": 2,
+   "Frequency": 13,
+   "Monetary": 5346300.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Farhan Wibowo",
+   "Recency": 42,
+   "Frequency": 8,
+   "Monetary": 1908250.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Farhan Wijaya",
+   "Recency": 187,
+   "Frequency": 9,
+   "Monetary": 6477750.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Galih Andriani",
+   "Recency": 2,
+   "Frequency": 12,
+   "Monetary": 3698750.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Galih Anggraini",
+   "Recency": 44,
+   "Frequency": 9,
+   "Monetary": 2419800.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Galih Fauzi",
+   "Recency": 50,
+   "Frequency": 16,
+   "Monetary": 6599250.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Galih Gunawan",
+   "Recency": 19,
+   "Frequency": 7,
+   "Monetary": 2618000.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Galih Hakim",
+   "Recency": 3,
+   "Frequency": 11,
+   "Monetary": 4272750.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Galih Hidayat",
+   "Recency": 7,
+   "Frequency": 7,
+   "Monetary": 3471800.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Galih Kusuma",
+   "Recency": 213,
+   "Frequency": 6,
+   "Monetary": 2039550.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Galih Lestari",
+   "Recency": 10,
+   "Frequency": 11,
+   "Monetary": 3701000.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Galih Mahendra",
+   "Recency": 162,
+   "Frequency": 9,
+   "Monetary": 2883000.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Galih Nugroho",
+   "Recency": 147,
+   "Frequency": 10,
+   "Monetary": 3987750.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Galih Permata",
+   "Recency": 21,
+   "Frequency": 12,
+   "Monetary": 3456250.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Galih Pratama",
+   "Recency": 129,
+   "Frequency": 10,
+   "Monetary": 4031850.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Galih Purnama",
+   "Recency": 53,
+   "Frequency": 7,
+   "Monetary": 2970050.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Galih Putra",
+   "Recency": 118,
+   "Frequency": 9,
+   "Monetary": 5472250.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Galih Rahmawati",
+   "Recency": 20,
+   "Frequency": 12,
+   "Monetary": 7982750.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Galih Ramadhan",
+   "Recency": 23,
+   "Frequency": 9,
+   "Monetary": 5622450.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Galih Santoso",
+   "Recency": 92,
+   "Frequency": 11,
+   "Monetary": 4590950.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Galih Saputra",
+   "Recency": 87,
+   "Frequency": 12,
+   "Monetary": 4844250.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Galih Setiawan",
+   "Recency": 83,
+   "Frequency": 13,
+   "Monetary": 4523350.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Galih Siregar",
+   "Recency": 12,
+   "Frequency": 8,
+   "Monetary": 2029500.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Galih Suryadi",
+   "Recency": 108,
+   "Frequency": 6,
+   "Monetary": 2787500.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Galih Susanto",
+   "Recency": 106,
+   "Frequency": 11,
+   "Monetary": 2738700.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Galih Utomo",
+   "Recency": 43,
+   "Frequency": 9,
+   "Monetary": 2477600.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Galih Wibowo",
+   "Recency": 41,
+   "Frequency": 10,
+   "Monetary": 3770750.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Galih Wijaya",
+   "Recency": 91,
+   "Frequency": 8,
+   "Monetary": 3700500.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Gita Andriani",
+   "Recency": 60,
+   "Frequency": 13,
+   "Monetary": 4670350.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Gita Anggraini",
+   "Recency": 248,
+   "Frequency": 4,
+   "Monetary": 1537250.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Gita Fauzi",
+   "Recency": 100,
+   "Frequency": 5,
+   "Monetary": 11834750.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Gita Gunawan",
+   "Recency": 178,
+   "Frequency": 11,
+   "Monetary": 7627500.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Gita Hakim",
+   "Recency": 26,
+   "Frequency": 6,
+   "Monetary": 1771000.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Gita Hidayat",
+   "Recency": 18,
+   "Frequency": 11,
+   "Monetary": 4554000.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Gita Kusuma",
+   "Recency": 17,
+   "Frequency": 11,
+   "Monetary": 5022750.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Gita Lestari",
+   "Recency": 80,
+   "Frequency": 7,
+   "Monetary": 1930750.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Gita Mahendra",
+   "Recency": 39,
+   "Frequency": 9,
+   "Monetary": 2698750.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Gita Nugroho",
+   "Recency": 153,
+   "Frequency": 12,
+   "Monetary": 11689000.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Gita Permata",
+   "Recency": 232,
+   "Frequency": 11,
+   "Monetary": 4383500.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Gita Pratama",
+   "Recency": 84,
+   "Frequency": 9,
+   "Monetary": 3659900.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Gita Purnama",
+   "Recency": 70,
+   "Frequency": 16,
+   "Monetary": 5940000.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Gita Putra",
+   "Recency": 8,
+   "Frequency": 8,
+   "Monetary": 2031250.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Gita Rahmawati",
+   "Recency": 142,
+   "Frequency": 10,
+   "Monetary": 3921300.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Gita Ramadhan",
+   "Recency": 107,
+   "Frequency": 15,
+   "Monetary": 9243600.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Gita Santoso",
+   "Recency": 25,
+   "Frequency": 11,
+   "Monetary": 3919550.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Gita Saputra",
+   "Recency": 12,
+   "Frequency": 10,
+   "Monetary": 4435000.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Gita Setiawan",
+   "Recency": 84,
+   "Frequency": 9,
+   "Monetary": 5145000.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Gita Siregar",
+   "Recency": 99,
+   "Frequency": 9,
+   "Monetary": 4632400.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Gita Suryadi",
+   "Recency": 96,
+   "Frequency": 18,
+   "Monetary": 5799750.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Gita Susanto",
+   "Recency": 16,
+   "Frequency": 8,
+   "Monetary": 2678250.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Gita Utomo",
+   "Recency": 77,
+   "Frequency": 13,
+   "Monetary": 3121550.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Gita Wibowo",
+   "Recency": 8,
+   "Frequency": 16,
+   "Monetary": 7510500.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Gita Wijaya",
+   "Recency": 159,
+   "Frequency": 8,
+   "Monetary": 3855250.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Hana Andriani",
+   "Recency": 21,
+   "Frequency": 7,
+   "Monetary": 3154000.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Hana Anggraini",
+   "Recency": 104,
+   "Frequency": 8,
+   "Monetary": 2302100.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Hana Fauzi",
+   "Recency": 181,
+   "Frequency": 7,
+   "Monetary": 2611000.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Hana Gunawan",
+   "Recency": 9,
+   "Frequency": 12,
+   "Monetary": 3335000.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Hana Hakim",
+   "Recency": 7,
+   "Frequency": 6,
+   "Monetary": 3020200.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Hana Hidayat",
+   "Recency": 57,
+   "Frequency": 15,
+   "Monetary": 7186550.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Hana Kusuma",
+   "Recency": 57,
+   "Frequency": 11,
+   "Monetary": 4034700.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Hana Lestari",
+   "Recency": 104,
+   "Frequency": 9,
+   "Monetary": 4287500.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Hana Mahendra",
+   "Recency": 3,
+   "Frequency": 13,
+   "Monetary": 4111300.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Hana Nugroho",
+   "Recency": 16,
+   "Frequency": 13,
+   "Monetary": 7720000.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Hana Permata",
+   "Recency": 28,
+   "Frequency": 12,
+   "Monetary": 6524250.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Hana Pratama",
+   "Recency": 69,
+   "Frequency": 9,
+   "Monetary": 5832350.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Hana Purnama",
+   "Recency": 101,
+   "Frequency": 9,
+   "Monetary": 2968000.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Hana Putra",
+   "Recency": 46,
+   "Frequency": 7,
+   "Monetary": 7448100.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Hana Rahmawati",
+   "Recency": 52,
+   "Frequency": 9,
+   "Monetary": 4551750.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Hana Ramadhan",
+   "Recency": 9,
+   "Frequency": 11,
+   "Monetary": 5738500.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Hana Santoso",
+   "Recency": 6,
+   "Frequency": 7,
+   "Monetary": 2356500.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Hana Saputra",
+   "Recency": 101,
+   "Frequency": 9,
+   "Monetary": 5301400.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Hana Setiawan",
+   "Recency": 31,
+   "Frequency": 11,
+   "Monetary": 3000900.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Hana Siregar",
+   "Recency": 283,
+   "Frequency": 6,
+   "Monetary": 1270250.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Hana Suryadi",
+   "Recency": 52,
+   "Frequency": 13,
+   "Monetary": 5263150.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Hana Susanto",
+   "Recency": 65,
+   "Frequency": 19,
+   "Monetary": 8840700.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Hana Utomo",
+   "Recency": 37,
+   "Frequency": 13,
+   "Monetary": 8666250.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Hana Wibowo",
+   "Recency": 65,
+   "Frequency": 10,
+   "Monetary": 4734100.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Hana Wijaya",
+   "Recency": 13,
+   "Frequency": 8,
+   "Monetary": 2029750.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Hendra Andriani",
+   "Recency": 114,
+   "Frequency": 11,
+   "Monetary": 3437750.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Hendra Anggraini",
+   "Recency": 7,
+   "Frequency": 13,
+   "Monetary": 6653750.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Hendra Fauzi",
+   "Recency": 62,
+   "Frequency": 7,
+   "Monetary": 4083300.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Hendra Gunawan",
+   "Recency": 107,
+   "Frequency": 11,
+   "Monetary": 4722750.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Hendra Hakim",
+   "Recency": 65,
+   "Frequency": 8,
+   "Monetary": 2077550.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Hendra Hidayat",
+   "Recency": 14,
+   "Frequency": 14,
+   "Monetary": 3332600.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Hendra Kusuma",
+   "Recency": 27,
+   "Frequency": 9,
+   "Monetary": 2758250.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Hendra Lestari",
+   "Recency": 29,
+   "Frequency": 13,
+   "Monetary": 7526000.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Hendra Mahendra",
+   "Recency": 2,
+   "Frequency": 9,
+   "Monetary": 3634600.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Hendra Nugroho",
+   "Recency": 61,
+   "Frequency": 11,
+   "Monetary": 8773250.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Hendra Permata",
+   "Recency": 46,
+   "Frequency": 14,
+   "Monetary": 4347500.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Hendra Pratama",
+   "Recency": 9,
+   "Frequency": 15,
+   "Monetary": 8514250.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Hendra Purnama",
+   "Recency": 32,
+   "Frequency": 18,
+   "Monetary": 5697500.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Hendra Putra",
+   "Recency": 33,
+   "Frequency": 12,
+   "Monetary": 8418250.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Hendra Rahmawati",
+   "Recency": 277,
+   "Frequency": 7,
+   "Monetary": 3570750.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Hendra Ramadhan",
+   "Recency": 69,
+   "Frequency": 10,
+   "Monetary": 7633750.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Hendra Santoso",
+   "Recency": 1,
+   "Frequency": 8,
+   "Monetary": 2467000.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Hendra Saputra",
+   "Recency": 25,
+   "Frequency": 14,
+   "Monetary": 3812850.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Hendra Setiawan",
+   "Recency": 191,
+   "Frequency": 11,
+   "Monetary": 2342500.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Hendra Siregar",
+   "Recency": 59,
+   "Frequency": 12,
+   "Monetary": 7419500.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Hendra Suryadi",
+   "Recency": 33,
+   "Frequency": 12,
+   "Monetary": 4338750.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Hendra Susanto",
+   "Recency": 99,
+   "Frequency": 18,
+   "Monetary": 8443050.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Hendra Utomo",
+   "Recency": 102,
+   "Frequency": 11,
+   "Monetary": 4331150.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Hendra Wibowo",
+   "Recency": 205,
+   "Frequency": 7,
+   "Monetary": 2312750.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Hendra Wijaya",
+   "Recency": 17,
+   "Frequency": 10,
+   "Monetary": 2415250.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Ilham Andriani",
+   "Recency": 50,
+   "Frequency": 4,
+   "Monetary": 1213150.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Ilham Anggraini",
+   "Recency": 46,
+   "Frequency": 11,
+   "Monetary": 2898600.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Ilham Fauzi",
+   "Recency": 92,
+   "Frequency": 12,
+   "Monetary": 5167000.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Ilham Gunawan",
+   "Recency": 180,
+   "Frequency": 6,
+   "Monetary": 3958450.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Ilham Hakim",
+   "Recency": 216,
+   "Frequency": 5,
+   "Monetary": 1544550.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Ilham Hidayat",
+   "Recency": 229,
+   "Frequency": 7,
+   "Monetary": 4101500.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Ilham Kusuma",
+   "Recency": 14,
+   "Frequency": 10,
+   "Monetary": 7108000.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Ilham Lestari",
+   "Recency": 31,
+   "Frequency": 11,
+   "Monetary": 4032550.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Ilham Mahendra",
+   "Recency": 68,
+   "Frequency": 10,
+   "Monetary": 6809250.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Ilham Nugroho",
+   "Recency": 38,
+   "Frequency": 4,
+   "Monetary": 1039250.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Ilham Permata",
+   "Recency": 6,
+   "Frequency": 9,
+   "Monetary": 3457750.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Ilham Pratama",
+   "Recency": 54,
+   "Frequency": 12,
+   "Monetary": 3252750.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Ilham Purnama",
+   "Recency": 59,
+   "Frequency": 19,
+   "Monetary": 9042450.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Ilham Putra",
+   "Recency": 145,
+   "Frequency": 3,
+   "Monetary": 730500.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Ilham Rahmawati",
+   "Recency": 209,
+   "Frequency": 9,
+   "Monetary": 7451200.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Ilham Ramadhan",
+   "Recency": 166,
+   "Frequency": 9,
+   "Monetary": 2339000.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Ilham Santoso",
+   "Recency": 157,
+   "Frequency": 9,
+   "Monetary": 3432050.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Ilham Saputra",
+   "Recency": 58,
+   "Frequency": 10,
+   "Monetary": 5453250.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Ilham Setiawan",
+   "Recency": 12,
+   "Frequency": 10,
+   "Monetary": 5038750.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Ilham Siregar",
+   "Recency": 7,
+   "Frequency": 15,
+   "Monetary": 4391650.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Ilham Suryadi",
+   "Recency": 85,
+   "Frequency": 10,
+   "Monetary": 3360400.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Ilham Susanto",
+   "Recency": 137,
+   "Frequency": 9,
+   "Monetary": 2451450.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Ilham Utomo",
+   "Recency": 13,
+   "Frequency": 13,
+   "Monetary": 7135500.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Ilham Wibowo",
+   "Recency": 44,
+   "Frequency": 8,
+   "Monetary": 3532650.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Ilham Wijaya",
+   "Recency": 64,
+   "Frequency": 18,
+   "Monetary": 9087600.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Indah Andriani",
+   "Recency": 63,
+   "Frequency": 7,
+   "Monetary": 2684450.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Indah Anggraini",
+   "Recency": 2,
+   "Frequency": 11,
+   "Monetary": 3445500.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Indah Fauzi",
+   "Recency": 106,
+   "Frequency": 11,
+   "Monetary": 5725450.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Indah Gunawan",
+   "Recency": 32,
+   "Frequency": 13,
+   "Monetary": 6189200.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Indah Hakim",
+   "Recency": 55,
+   "Frequency": 13,
+   "Monetary": 4481550.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Indah Hidayat",
+   "Recency": 70,
+   "Frequency": 12,
+   "Monetary": 3207500.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Indah Kusuma",
+   "Recency": 18,
+   "Frequency": 7,
+   "Monetary": 1952750.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Indah Lestari",
+   "Recency": 12,
+   "Frequency": 10,
+   "Monetary": 3704500.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Indah Mahendra",
+   "Recency": 121,
+   "Frequency": 9,
+   "Monetary": 3802000.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Indah Nugroho",
+   "Recency": 66,
+   "Frequency": 6,
+   "Monetary": 2260500.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Indah Permata",
+   "Recency": 97,
+   "Frequency": 9,
+   "Monetary": 4568150.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Indah Pratama",
+   "Recency": 118,
+   "Frequency": 9,
+   "Monetary": 3265250.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Indah Purnama",
+   "Recency": 159,
+   "Frequency": 7,
+   "Monetary": 2218250.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Indah Putra",
+   "Recency": 54,
+   "Frequency": 9,
+   "Monetary": 2438500.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Indah Rahmawati",
+   "Recency": 12,
+   "Frequency": 15,
+   "Monetary": 7636250.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Indah Ramadhan",
+   "Recency": 47,
+   "Frequency": 15,
+   "Monetary": 4983200.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Indah Santoso",
+   "Recency": 4,
+   "Frequency": 14,
+   "Monetary": 5253800.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Indah Saputra",
+   "Recency": 10,
+   "Frequency": 12,
+   "Monetary": 7301050.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Indah Setiawan",
+   "Recency": 111,
+   "Frequency": 6,
+   "Monetary": 3282600.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Indah Siregar",
+   "Recency": 43,
+   "Frequency": 8,
+   "Monetary": 2218800.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Indah Suryadi",
+   "Recency": 5,
+   "Frequency": 9,
+   "Monetary": 4193500.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Indah Susanto",
+   "Recency": 11,
+   "Frequency": 5,
+   "Monetary": 1547300.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Indah Utomo",
+   "Recency": 31,
+   "Frequency": 9,
+   "Monetary": 1958500.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Indah Wibowo",
+   "Recency": 1,
+   "Frequency": 10,
+   "Monetary": 2741800.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Indah Wijaya",
+   "Recency": 75,
+   "Frequency": 6,
+   "Monetary": 2680750.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Joko Andriani",
+   "Recency": 33,
+   "Frequency": 12,
+   "Monetary": 2868750.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Joko Anggraini",
+   "Recency": 108,
+   "Frequency": 13,
+   "Monetary": 10154400.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Joko Fauzi",
+   "Recency": 6,
+   "Frequency": 6,
+   "Monetary": 2022500.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Joko Gunawan",
+   "Recency": 77,
+   "Frequency": 9,
+   "Monetary": 2648750.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Joko Hakim",
+   "Recency": 29,
+   "Frequency": 5,
+   "Monetary": 1234250.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Joko Hidayat",
+   "Recency": 53,
+   "Frequency": 8,
+   "Monetary": 3858250.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Joko Kusuma",
+   "Recency": 81,
+   "Frequency": 11,
+   "Monetary": 2772000.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Joko Lestari",
+   "Recency": 156,
+   "Frequency": 11,
+   "Monetary": 3889500.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Joko Mahendra",
+   "Recency": 54,
+   "Frequency": 9,
+   "Monetary": 2184250.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Joko Nugroho",
+   "Recency": 4,
+   "Frequency": 9,
+   "Monetary": 3307450.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Joko Permata",
+   "Recency": 32,
+   "Frequency": 10,
+   "Monetary": 2821550.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Joko Pratama",
+   "Recency": 113,
+   "Frequency": 6,
+   "Monetary": 1879150.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Joko Purnama",
+   "Recency": 62,
+   "Frequency": 9,
+   "Monetary": 2280000.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Joko Putra",
+   "Recency": 20,
+   "Frequency": 12,
+   "Monetary": 3840750.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Joko Rahmawati",
+   "Recency": 11,
+   "Frequency": 12,
+   "Monetary": 8077050.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Joko Ramadhan",
+   "Recency": 218,
+   "Frequency": 10,
+   "Monetary": 6167700.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Joko Santoso",
+   "Recency": 32,
+   "Frequency": 16,
+   "Monetary": 5839000.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Joko Saputra",
+   "Recency": 75,
+   "Frequency": 15,
+   "Monetary": 5054150.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Joko Setiawan",
+   "Recency": 63,
+   "Frequency": 10,
+   "Monetary": 3642000.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Joko Siregar",
+   "Recency": 199,
+   "Frequency": 8,
+   "Monetary": 3193250.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Joko Suryadi",
+   "Recency": 185,
+   "Frequency": 8,
+   "Monetary": 3373250.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Joko Susanto",
+   "Recency": 44,
+   "Frequency": 6,
+   "Monetary": 2457100.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Joko Utomo",
+   "Recency": 12,
+   "Frequency": 5,
+   "Monetary": 1439500.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Joko Wibowo",
+   "Recency": 13,
+   "Frequency": 13,
+   "Monetary": 5504250.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Joko Wijaya",
+   "Recency": 76,
+   "Frequency": 10,
+   "Monetary": 11080000.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Kartika Andriani",
+   "Recency": 10,
+   "Frequency": 9,
+   "Monetary": 3284250.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Kartika Anggraini",
+   "Recency": 85,
+   "Frequency": 10,
+   "Monetary": 2826750.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Kartika Fauzi",
+   "Recency": 14,
+   "Frequency": 5,
+   "Monetary": 2837750.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Kartika Gunawan",
+   "Recency": 10,
+   "Frequency": 13,
+   "Monetary": 6864500.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Kartika Hakim",
+   "Recency": 50,
+   "Frequency": 7,
+   "Monetary": 4678500.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Kartika Hidayat",
+   "Recency": 40,
+   "Frequency": 11,
+   "Monetary": 3195950.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Kartika Kusuma",
+   "Recency": 37,
+   "Frequency": 14,
+   "Monetary": 2815950.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Kartika Lestari",
+   "Recency": 50,
+   "Frequency": 13,
+   "Monetary": 5407650.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Kartika Mahendra",
+   "Recency": 57,
+   "Frequency": 11,
+   "Monetary": 6452950.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Kartika Nugroho",
+   "Recency": 76,
+   "Frequency": 7,
+   "Monetary": 2144000.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Kartika Permata",
+   "Recency": 14,
+   "Frequency": 4,
+   "Monetary": 830000.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Kartika Pratama",
+   "Recency": 111,
+   "Frequency": 11,
+   "Monetary": 4330550.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Kartika Purnama",
+   "Recency": 84,
+   "Frequency": 9,
+   "Monetary": 4982800.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Kartika Putra",
+   "Recency": 85,
+   "Frequency": 9,
+   "Monetary": 2156250.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Kartika Rahmawati",
+   "Recency": 1,
+   "Frequency": 8,
+   "Monetary": 2138750.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Kartika Ramadhan",
+   "Recency": 73,
+   "Frequency": 9,
+   "Monetary": 5446500.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Kartika Santoso",
+   "Recency": 8,
+   "Frequency": 16,
+   "Monetary": 4297300.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Kartika Saputra",
+   "Recency": 44,
+   "Frequency": 15,
+   "Monetary": 4262100.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Kartika Setiawan",
+   "Recency": 63,
+   "Frequency": 5,
+   "Monetary": 3914000.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Kartika Siregar",
+   "Recency": 14,
+   "Frequency": 13,
+   "Monetary": 5183900.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Kartika Suryadi",
+   "Recency": 171,
+   "Frequency": 8,
+   "Monetary": 4719450.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Kartika Susanto",
+   "Recency": 291,
+   "Frequency": 4,
+   "Monetary": 1405750.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Kartika Utomo",
+   "Recency": 12,
+   "Frequency": 7,
+   "Monetary": 2524300.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Kartika Wibowo",
+   "Recency": 95,
+   "Frequency": 6,
+   "Monetary": 1796750.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Kartika Wijaya",
+   "Recency": 34,
+   "Frequency": 12,
+   "Monetary": 3439700.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Kirana Andriani",
+   "Recency": 204,
+   "Frequency": 7,
+   "Monetary": 1953500.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Kirana Anggraini",
+   "Recency": 65,
+   "Frequency": 14,
+   "Monetary": 5556900.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Kirana Fauzi",
+   "Recency": 1,
+   "Frequency": 12,
+   "Monetary": 3204250.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Kirana Gunawan",
+   "Recency": 123,
+   "Frequency": 10,
+   "Monetary": 4767800.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Kirana Hakim",
+   "Recency": 157,
+   "Frequency": 9,
+   "Monetary": 5203550.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Kirana Hidayat",
+   "Recency": 6,
+   "Frequency": 6,
+   "Monetary": 2815750.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Kirana Kusuma",
+   "Recency": 111,
+   "Frequency": 9,
+   "Monetary": 3680200.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Kirana Lestari",
+   "Recency": 37,
+   "Frequency": 11,
+   "Monetary": 3685250.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Kirana Mahendra",
+   "Recency": 167,
+   "Frequency": 9,
+   "Monetary": 3508150.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Kirana Nugroho",
+   "Recency": 7,
+   "Frequency": 15,
+   "Monetary": 5757200.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Kirana Permata",
+   "Recency": 8,
+   "Frequency": 19,
+   "Monetary": 8740200.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Kirana Pratama",
+   "Recency": 35,
+   "Frequency": 11,
+   "Monetary": 5360050.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Kirana Purnama",
+   "Recency": 21,
+   "Frequency": 14,
+   "Monetary": 7114500.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Kirana Putra",
+   "Recency": 70,
+   "Frequency": 4,
+   "Monetary": 2993750.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Kirana Rahmawati",
+   "Recency": 3,
+   "Frequency": 9,
+   "Monetary": 4037800.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Kirana Ramadhan",
+   "Recency": 110,
+   "Frequency": 13,
+   "Monetary": 5884000.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Kirana Santoso",
+   "Recency": 193,
+   "Frequency": 8,
+   "Monetary": 3132250.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Kirana Saputra",
+   "Recency": 150,
+   "Frequency": 9,
+   "Monetary": 3690800.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Kirana Setiawan",
+   "Recency": 47,
+   "Frequency": 9,
+   "Monetary": 2261000.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Kirana Siregar",
+   "Recency": 85,
+   "Frequency": 5,
+   "Monetary": 2929750.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Kirana Suryadi",
+   "Recency": 65,
+   "Frequency": 8,
+   "Monetary": 3146350.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Kirana Susanto",
+   "Recency": 67,
+   "Frequency": 16,
+   "Monetary": 10254600.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Kirana Utomo",
+   "Recency": 12,
+   "Frequency": 10,
+   "Monetary": 5233600.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Kirana Wibowo",
+   "Recency": 53,
+   "Frequency": 11,
+   "Monetary": 3938250.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Kirana Wijaya",
+   "Recency": 2,
+   "Frequency": 12,
+   "Monetary": 5886200.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Lestari Andriani",
+   "Recency": 52,
+   "Frequency": 10,
+   "Monetary": 4487750.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Lestari Anggraini",
+   "Recency": 23,
+   "Frequency": 9,
+   "Monetary": 2481750.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Lestari Fauzi",
+   "Recency": 93,
+   "Frequency": 9,
+   "Monetary": 5973500.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Lestari Gunawan",
+   "Recency": 102,
+   "Frequency": 8,
+   "Monetary": 2093000.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Lestari Hakim",
+   "Recency": 26,
+   "Frequency": 12,
+   "Monetary": 5720350.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Lestari Hidayat",
+   "Recency": 134,
+   "Frequency": 4,
+   "Monetary": 1313750.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Lestari Kusuma",
+   "Recency": 12,
+   "Frequency": 7,
+   "Monetary": 6545200.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Lestari Lestari",
+   "Recency": 142,
+   "Frequency": 9,
+   "Monetary": 6173300.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Lestari Mahendra",
+   "Recency": 3,
+   "Frequency": 6,
+   "Monetary": 1557750.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Lestari Nugroho",
+   "Recency": 175,
+   "Frequency": 7,
+   "Monetary": 1548000.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Lestari Permata",
+   "Recency": 5,
+   "Frequency": 13,
+   "Monetary": 4931200.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Lestari Pratama",
+   "Recency": 120,
+   "Frequency": 7,
+   "Monetary": 1181500.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Lestari Purnama",
+   "Recency": 197,
+   "Frequency": 9,
+   "Monetary": 2840000.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Lestari Putra",
+   "Recency": 11,
+   "Frequency": 11,
+   "Monetary": 4778500.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Lestari Rahmawati",
+   "Recency": 1,
+   "Frequency": 15,
+   "Monetary": 7964450.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Lestari Ramadhan",
+   "Recency": 121,
+   "Frequency": 10,
+   "Monetary": 2768750.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Lestari Santoso",
+   "Recency": 2,
+   "Frequency": 8,
+   "Monetary": 3432050.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Lestari Saputra",
+   "Recency": 30,
+   "Frequency": 10,
+   "Monetary": 3190050.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Lestari Setiawan",
+   "Recency": 18,
+   "Frequency": 12,
+   "Monetary": 3949000.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Lestari Siregar",
+   "Recency": 194,
+   "Frequency": 10,
+   "Monetary": 4268500.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Lestari Suryadi",
+   "Recency": 62,
+   "Frequency": 9,
+   "Monetary": 5227500.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Lestari Susanto",
+   "Recency": 84,
+   "Frequency": 10,
+   "Monetary": 5192250.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Lestari Utomo",
+   "Recency": 38,
+   "Frequency": 15,
+   "Monetary": 8566950.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Lestari Wibowo",
+   "Recency": 64,
+   "Frequency": 13,
+   "Monetary": 5013000.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Lestari Wijaya",
+   "Recency": 85,
+   "Frequency": 9,
+   "Monetary": 5142750.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Lukman Andriani",
+   "Recency": 30,
+   "Frequency": 8,
+   "Monetary": 4624200.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Lukman Anggraini",
+   "Recency": 33,
+   "Frequency": 9,
+   "Monetary": 2761000.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Lukman Fauzi",
+   "Recency": 119,
+   "Frequency": 10,
+   "Monetary": 5331500.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Lukman Gunawan",
+   "Recency": 17,
+   "Frequency": 10,
+   "Monetary": 2471650.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Lukman Hakim",
+   "Recency": 16,
+   "Frequency": 7,
+   "Monetary": 3614750.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Lukman Hidayat",
+   "Recency": 8,
+   "Frequency": 7,
+   "Monetary": 3484650.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Lukman Kusuma",
+   "Recency": 30,
+   "Frequency": 11,
+   "Monetary": 5320250.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Lukman Lestari",
+   "Recency": 93,
+   "Frequency": 8,
+   "Monetary": 4035500.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Lukman Mahendra",
+   "Recency": 158,
+   "Frequency": 9,
+   "Monetary": 9523700.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Lukman Nugroho",
+   "Recency": 52,
+   "Frequency": 14,
+   "Monetary": 6233800.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Lukman Permata",
+   "Recency": 22,
+   "Frequency": 10,
+   "Monetary": 3302000.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Lukman Pratama",
+   "Recency": 56,
+   "Frequency": 8,
+   "Monetary": 2959650.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Lukman Purnama",
+   "Recency": 179,
+   "Frequency": 10,
+   "Monetary": 3022600.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Lukman Putra",
+   "Recency": 18,
+   "Frequency": 7,
+   "Monetary": 3892500.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Lukman Rahmawati",
+   "Recency": 14,
+   "Frequency": 12,
+   "Monetary": 5753400.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Lukman Ramadhan",
+   "Recency": 123,
+   "Frequency": 7,
+   "Monetary": 1436000.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Lukman Santoso",
+   "Recency": 10,
+   "Frequency": 18,
+   "Monetary": 5909250.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Lukman Saputra",
+   "Recency": 53,
+   "Frequency": 12,
+   "Monetary": 2727800.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Lukman Setiawan",
+   "Recency": 169,
+   "Frequency": 7,
+   "Monetary": 1582350.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Lukman Siregar",
+   "Recency": 15,
+   "Frequency": 7,
+   "Monetary": 3660850.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Lukman Suryadi",
+   "Recency": 165,
+   "Frequency": 11,
+   "Monetary": 2682650.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Lukman Susanto",
+   "Recency": 51,
+   "Frequency": 9,
+   "Monetary": 3934000.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Lukman Utomo",
+   "Recency": 32,
+   "Frequency": 8,
+   "Monetary": 3061500.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Lukman Wibowo",
+   "Recency": 139,
+   "Frequency": 8,
+   "Monetary": 3461000.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Lukman Wijaya",
+   "Recency": 20,
+   "Frequency": 19,
+   "Monetary": 7400000.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Maya Andriani",
+   "Recency": 37,
+   "Frequency": 12,
+   "Monetary": 4420200.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Maya Anggraini",
+   "Recency": 79,
+   "Frequency": 9,
+   "Monetary": 2408150.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Maya Fauzi",
+   "Recency": 157,
+   "Frequency": 10,
+   "Monetary": 4060500.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Maya Gunawan",
+   "Recency": 5,
+   "Frequency": 9,
+   "Monetary": 3818000.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Maya Hakim",
+   "Recency": 52,
+   "Frequency": 15,
+   "Monetary": 4905100.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Maya Hidayat",
+   "Recency": 23,
+   "Frequency": 8,
+   "Monetary": 3333000.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Maya Kusuma",
+   "Recency": 81,
+   "Frequency": 10,
+   "Monetary": 2928500.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Maya Lestari",
+   "Recency": 62,
+   "Frequency": 6,
+   "Monetary": 1425000.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Maya Mahendra",
+   "Recency": 32,
+   "Frequency": 14,
+   "Monetary": 8976800.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Maya Nugroho",
+   "Recency": 19,
+   "Frequency": 11,
+   "Monetary": 4705500.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Maya Permata",
+   "Recency": 11,
+   "Frequency": 6,
+   "Monetary": 5217450.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Maya Pratama",
+   "Recency": 107,
+   "Frequency": 10,
+   "Monetary": 5554200.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Maya Purnama",
+   "Recency": 22,
+   "Frequency": 10,
+   "Monetary": 4845250.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Maya Putra",
+   "Recency": 81,
+   "Frequency": 14,
+   "Monetary": 9322250.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Maya Rahmawati",
+   "Recency": 124,
+   "Frequency": 11,
+   "Monetary": 2842000.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Maya Ramadhan",
+   "Recency": 113,
+   "Frequency": 13,
+   "Monetary": 6256000.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Maya Santoso",
+   "Recency": 14,
+   "Frequency": 14,
+   "Monetary": 5680500.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Maya Saputra",
+   "Recency": 63,
+   "Frequency": 10,
+   "Monetary": 2871000.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Maya Setiawan",
+   "Recency": 6,
+   "Frequency": 9,
+   "Monetary": 4095000.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Maya Siregar",
+   "Recency": 11,
+   "Frequency": 10,
+   "Monetary": 6139500.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Maya Suryadi",
+   "Recency": 178,
+   "Frequency": 12,
+   "Monetary": 10241500.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Maya Susanto",
+   "Recency": 82,
+   "Frequency": 7,
+   "Monetary": 2517300.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Maya Utomo",
+   "Recency": 116,
+   "Frequency": 10,
+   "Monetary": 3628250.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Maya Wibowo",
+   "Recency": 28,
+   "Frequency": 15,
+   "Monetary": 7925000.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Maya Wijaya",
+   "Recency": 1,
+   "Frequency": 9,
+   "Monetary": 5289300.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Muhammad Andriani",
+   "Recency": 32,
+   "Frequency": 7,
+   "Monetary": 2434750.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Muhammad Anggraini",
+   "Recency": 49,
+   "Frequency": 6,
+   "Monetary": 2673750.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Muhammad Fauzi",
+   "Recency": 36,
+   "Frequency": 10,
+   "Monetary": 5499000.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Muhammad Gunawan",
+   "Recency": 39,
+   "Frequency": 11,
+   "Monetary": 2708350.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Muhammad Hakim",
+   "Recency": 145,
+   "Frequency": 6,
+   "Monetary": 3978250.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Muhammad Hidayat",
+   "Recency": 8,
+   "Frequency": 9,
+   "Monetary": 2922250.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Muhammad Kusuma",
+   "Recency": 39,
+   "Frequency": 7,
+   "Monetary": 3571500.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Muhammad Lestari",
+   "Recency": 46,
+   "Frequency": 12,
+   "Monetary": 3934800.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Muhammad Mahendra",
+   "Recency": 22,
+   "Frequency": 10,
+   "Monetary": 2948550.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Muhammad Nugroho",
+   "Recency": 63,
+   "Frequency": 9,
+   "Monetary": 2875000.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Muhammad Permata",
+   "Recency": 13,
+   "Frequency": 10,
+   "Monetary": 1602250.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Muhammad Pratama",
+   "Recency": 103,
+   "Frequency": 14,
+   "Monetary": 9102000.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Muhammad Purnama",
+   "Recency": 9,
+   "Frequency": 13,
+   "Monetary": 5046100.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Muhammad Putra",
+   "Recency": 95,
+   "Frequency": 1,
+   "Monetary": 599000.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Muhammad Rahmawati",
+   "Recency": 23,
+   "Frequency": 13,
+   "Monetary": 4592750.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Muhammad Ramadhan",
+   "Recency": 14,
+   "Frequency": 12,
+   "Monetary": 4732900.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Muhammad Santoso",
+   "Recency": 9,
+   "Frequency": 11,
+   "Monetary": 5533450.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Muhammad Saputra",
+   "Recency": 61,
+   "Frequency": 11,
+   "Monetary": 2907250.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Muhammad Setiawan",
+   "Recency": 98,
+   "Frequency": 9,
+   "Monetary": 3251800.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Muhammad Siregar",
+   "Recency": 19,
+   "Frequency": 8,
+   "Monetary": 2550750.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Muhammad Suryadi",
+   "Recency": 40,
+   "Frequency": 15,
+   "Monetary": 3159750.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Muhammad Susanto",
+   "Recency": 76,
+   "Frequency": 11,
+   "Monetary": 3804000.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Muhammad Utomo",
+   "Recency": 18,
+   "Frequency": 11,
+   "Monetary": 3286500.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Muhammad Wibowo",
+   "Recency": 25,
+   "Frequency": 9,
+   "Monetary": 3901000.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Muhammad Wijaya",
+   "Recency": 71,
+   "Frequency": 3,
+   "Monetary": 2909250.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Nadia Andriani",
+   "Recency": 55,
+   "Frequency": 12,
+   "Monetary": 3307000.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Nadia Anggraini",
+   "Recency": 81,
+   "Frequency": 11,
+   "Monetary": 3742350.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Nadia Fauzi",
+   "Recency": 29,
+   "Frequency": 9,
+   "Monetary": 3057000.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Nadia Gunawan",
+   "Recency": 42,
+   "Frequency": 12,
+   "Monetary": 4114700.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Nadia Hakim",
+   "Recency": 28,
+   "Frequency": 6,
+   "Monetary": 3307250.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Nadia Hidayat",
+   "Recency": 27,
+   "Frequency": 14,
+   "Monetary": 5333250.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Nadia Kusuma",
+   "Recency": 7,
+   "Frequency": 10,
+   "Monetary": 4903500.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Nadia Lestari",
+   "Recency": 16,
+   "Frequency": 14,
+   "Monetary": 4547850.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Nadia Mahendra",
+   "Recency": 27,
+   "Frequency": 13,
+   "Monetary": 3503250.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Nadia Nugroho",
+   "Recency": 40,
+   "Frequency": 8,
+   "Monetary": 1673750.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Nadia Permata",
+   "Recency": 98,
+   "Frequency": 13,
+   "Monetary": 4117000.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Nadia Pratama",
+   "Recency": 9,
+   "Frequency": 5,
+   "Monetary": 1732750.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Nadia Purnama",
+   "Recency": 64,
+   "Frequency": 12,
+   "Monetary": 3113500.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Nadia Putra",
+   "Recency": 35,
+   "Frequency": 8,
+   "Monetary": 3695250.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Nadia Rahmawati",
+   "Recency": 86,
+   "Frequency": 8,
+   "Monetary": 2999500.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Nadia Ramadhan",
+   "Recency": 184,
+   "Frequency": 8,
+   "Monetary": 2483000.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Nadia Santoso",
+   "Recency": 5,
+   "Frequency": 11,
+   "Monetary": 4472250.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Nadia Saputra",
+   "Recency": 186,
+   "Frequency": 11,
+   "Monetary": 3780750.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Nadia Setiawan",
+   "Recency": 105,
+   "Frequency": 14,
+   "Monetary": 4524750.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Nadia Siregar",
+   "Recency": 15,
+   "Frequency": 9,
+   "Monetary": 3934750.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Nadia Suryadi",
+   "Recency": 18,
+   "Frequency": 10,
+   "Monetary": 3044250.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Nadia Susanto",
+   "Recency": 40,
+   "Frequency": 13,
+   "Monetary": 4444050.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Nadia Utomo",
+   "Recency": 187,
+   "Frequency": 11,
+   "Monetary": 2831000.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Nadia Wibowo",
+   "Recency": 6,
+   "Frequency": 16,
+   "Monetary": 8463850.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Nadia Wijaya",
+   "Recency": 98,
+   "Frequency": 15,
+   "Monetary": 9184000.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Nanda Andriani",
+   "Recency": 17,
+   "Frequency": 14,
+   "Monetary": 5209500.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Nanda Anggraini",
+   "Recency": 59,
+   "Frequency": 12,
+   "Monetary": 4801100.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Nanda Fauzi",
+   "Recency": 119,
+   "Frequency": 12,
+   "Monetary": 2750250.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Nanda Gunawan",
+   "Recency": 1,
+   "Frequency": 14,
+   "Monetary": 5877900.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Nanda Hakim",
+   "Recency": 45,
+   "Frequency": 6,
+   "Monetary": 3418500.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Nanda Hidayat",
+   "Recency": 17,
+   "Frequency": 13,
+   "Monetary": 6933450.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Nanda Kusuma",
+   "Recency": 110,
+   "Frequency": 9,
+   "Monetary": 3898750.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Nanda Lestari",
+   "Recency": 37,
+   "Frequency": 19,
+   "Monetary": 6045100.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Nanda Mahendra",
+   "Recency": 22,
+   "Frequency": 6,
+   "Monetary": 2492100.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Nanda Nugroho",
+   "Recency": 116,
+   "Frequency": 16,
+   "Monetary": 8015000.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Nanda Permata",
+   "Recency": 70,
+   "Frequency": 10,
+   "Monetary": 4068100.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Nanda Pratama",
+   "Recency": 107,
+   "Frequency": 14,
+   "Monetary": 4624750.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Nanda Purnama",
+   "Recency": 3,
+   "Frequency": 8,
+   "Monetary": 2984000.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Nanda Putra",
+   "Recency": 47,
+   "Frequency": 13,
+   "Monetary": 3992250.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Nanda Rahmawati",
+   "Recency": 49,
+   "Frequency": 13,
+   "Monetary": 3544050.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Nanda Ramadhan",
+   "Recency": 22,
+   "Frequency": 12,
+   "Monetary": 3774250.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Nanda Santoso",
+   "Recency": 43,
+   "Frequency": 12,
+   "Monetary": 5943950.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Nanda Saputra",
+   "Recency": 152,
+   "Frequency": 9,
+   "Monetary": 4362750.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Nanda Setiawan",
+   "Recency": 44,
+   "Frequency": 11,
+   "Monetary": 4513100.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Nanda Siregar",
+   "Recency": 44,
+   "Frequency": 13,
+   "Monetary": 3911450.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Nanda Suryadi",
+   "Recency": 2,
+   "Frequency": 10,
+   "Monetary": 2872650.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Nanda Susanto",
+   "Recency": 139,
+   "Frequency": 9,
+   "Monetary": 2894750.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Nanda Utomo",
+   "Recency": 3,
+   "Frequency": 10,
+   "Monetary": 5540850.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Nanda Wibowo",
+   "Recency": 36,
+   "Frequency": 7,
+   "Monetary": 3497250.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Nanda Wijaya",
+   "Recency": 245,
+   "Frequency": 5,
+   "Monetary": 1538900.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Oki Andriani",
+   "Recency": 188,
+   "Frequency": 10,
+   "Monetary": 2668750.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Oki Anggraini",
+   "Recency": 6,
+   "Frequency": 8,
+   "Monetary": 3315750.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Oki Fauzi",
+   "Recency": 30,
+   "Frequency": 9,
+   "Monetary": 4013250.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Oki Gunawan",
+   "Recency": 109,
+   "Frequency": 8,
+   "Monetary": 4318750.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Oki Hakim",
+   "Recency": 45,
+   "Frequency": 7,
+   "Monetary": 6296950.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Oki Hidayat",
+   "Recency": 128,
+   "Frequency": 12,
+   "Monetary": 6143300.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Oki Kusuma",
+   "Recency": 38,
+   "Frequency": 12,
+   "Monetary": 3620050.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Oki Lestari",
+   "Recency": 52,
+   "Frequency": 8,
+   "Monetary": 1773400.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Oki Mahendra",
+   "Recency": 146,
+   "Frequency": 8,
+   "Monetary": 6134500.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Oki Nugroho",
+   "Recency": 38,
+   "Frequency": 11,
+   "Monetary": 2128500.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Oki Permata",
+   "Recency": 144,
+   "Frequency": 16,
+   "Monetary": 8348150.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Oki Pratama",
+   "Recency": 51,
+   "Frequency": 10,
+   "Monetary": 4514250.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Oki Purnama",
+   "Recency": 21,
+   "Frequency": 8,
+   "Monetary": 3574500.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Oki Putra",
+   "Recency": 19,
+   "Frequency": 14,
+   "Monetary": 7832300.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Oki Rahmawati",
+   "Recency": 346,
+   "Frequency": 8,
+   "Monetary": 1879250.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Oki Ramadhan",
+   "Recency": 82,
+   "Frequency": 13,
+   "Monetary": 6867250.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Oki Santoso",
+   "Recency": 62,
+   "Frequency": 8,
+   "Monetary": 4678600.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Oki Saputra",
+   "Recency": 1,
+   "Frequency": 8,
+   "Monetary": 5417500.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Oki Setiawan",
+   "Recency": 70,
+   "Frequency": 10,
+   "Monetary": 2459250.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Oki Siregar",
+   "Recency": 13,
+   "Frequency": 14,
+   "Monetary": 5808650.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Oki Suryadi",
+   "Recency": 193,
+   "Frequency": 4,
+   "Monetary": 1105500.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Oki Susanto",
+   "Recency": 64,
+   "Frequency": 7,
+   "Monetary": 3107500.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Oki Utomo",
+   "Recency": 15,
+   "Frequency": 11,
+   "Monetary": 7818250.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Oki Wibowo",
+   "Recency": 31,
+   "Frequency": 11,
+   "Monetary": 3976050.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Oki Wijaya",
+   "Recency": 99,
+   "Frequency": 8,
+   "Monetary": 4232500.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Pratama Andriani",
+   "Recency": 77,
+   "Frequency": 12,
+   "Monetary": 5261800.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Pratama Anggraini",
+   "Recency": 27,
+   "Frequency": 9,
+   "Monetary": 2939950.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Pratama Fauzi",
+   "Recency": 233,
+   "Frequency": 5,
+   "Monetary": 1906250.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Pratama Gunawan",
+   "Recency": 25,
+   "Frequency": 11,
+   "Monetary": 5946050.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Pratama Hakim",
+   "Recency": 17,
+   "Frequency": 6,
+   "Monetary": 1352500.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Pratama Hidayat",
+   "Recency": 36,
+   "Frequency": 11,
+   "Monetary": 3999750.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Pratama Kusuma",
+   "Recency": 114,
+   "Frequency": 9,
+   "Monetary": 9113950.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Pratama Lestari",
+   "Recency": 76,
+   "Frequency": 10,
+   "Monetary": 6715250.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Pratama Mahendra",
+   "Recency": 36,
+   "Frequency": 10,
+   "Monetary": 2895800.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Pratama Nugroho",
+   "Recency": 19,
+   "Frequency": 8,
+   "Monetary": 4889250.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Pratama Permata",
+   "Recency": 6,
+   "Frequency": 15,
+   "Monetary": 5427250.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Pratama Pratama",
+   "Recency": 194,
+   "Frequency": 11,
+   "Monetary": 2173800.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Pratama Purnama",
+   "Recency": 10,
+   "Frequency": 9,
+   "Monetary": 9064000.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Pratama Putra",
+   "Recency": 23,
+   "Frequency": 12,
+   "Monetary": 6931600.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Pratama Rahmawati",
+   "Recency": 3,
+   "Frequency": 11,
+   "Monetary": 9133050.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Pratama Ramadhan",
+   "Recency": 1,
+   "Frequency": 10,
+   "Monetary": 4526550.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Pratama Santoso",
+   "Recency": 139,
+   "Frequency": 8,
+   "Monetary": 2520250.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Pratama Saputra",
+   "Recency": 87,
+   "Frequency": 12,
+   "Monetary": 7395550.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Pratama Setiawan",
+   "Recency": 230,
+   "Frequency": 5,
+   "Monetary": 1794100.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Pratama Siregar",
+   "Recency": 83,
+   "Frequency": 9,
+   "Monetary": 3391850.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Pratama Suryadi",
+   "Recency": 6,
+   "Frequency": 9,
+   "Monetary": 3569250.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Pratama Susanto",
+   "Recency": 158,
+   "Frequency": 6,
+   "Monetary": 2718250.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Pratama Utomo",
+   "Recency": 48,
+   "Frequency": 14,
+   "Monetary": 7110750.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Pratama Wibowo",
+   "Recency": 11,
+   "Frequency": 12,
+   "Monetary": 6845600.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Pratama Wijaya",
+   "Recency": 82,
+   "Frequency": 9,
+   "Monetary": 4173250.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Putri Andriani",
+   "Recency": 28,
+   "Frequency": 10,
+   "Monetary": 9461200.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Putri Anggraini",
+   "Recency": 46,
+   "Frequency": 11,
+   "Monetary": 6874500.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Putri Fauzi",
+   "Recency": 29,
+   "Frequency": 12,
+   "Monetary": 6322700.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Putri Gunawan",
+   "Recency": 31,
+   "Frequency": 16,
+   "Monetary": 7269750.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Putri Hakim",
+   "Recency": 81,
+   "Frequency": 8,
+   "Monetary": 2054750.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Putri Hidayat",
+   "Recency": 25,
+   "Frequency": 7,
+   "Monetary": 3153000.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Putri Kusuma",
+   "Recency": 167,
+   "Frequency": 4,
+   "Monetary": 1369750.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Putri Lestari",
+   "Recency": 87,
+   "Frequency": 12,
+   "Monetary": 2928550.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Putri Mahendra",
+   "Recency": 10,
+   "Frequency": 9,
+   "Monetary": 2963800.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Putri Nugroho",
+   "Recency": 86,
+   "Frequency": 11,
+   "Monetary": 2253000.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Putri Permata",
+   "Recency": 75,
+   "Frequency": 5,
+   "Monetary": 666250.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Putri Pratama",
+   "Recency": 28,
+   "Frequency": 11,
+   "Monetary": 2852400.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Putri Purnama",
+   "Recency": 205,
+   "Frequency": 8,
+   "Monetary": 2000850.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Putri Putra",
+   "Recency": 63,
+   "Frequency": 11,
+   "Monetary": 6136800.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Putri Rahmawati",
+   "Recency": 196,
+   "Frequency": 7,
+   "Monetary": 2794000.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Putri Ramadhan",
+   "Recency": 53,
+   "Frequency": 7,
+   "Monetary": 1950750.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Putri Santoso",
+   "Recency": 15,
+   "Frequency": 15,
+   "Monetary": 7696500.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Putri Saputra",
+   "Recency": 2,
+   "Frequency": 11,
+   "Monetary": 2352850.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Putri Setiawan",
+   "Recency": 210,
+   "Frequency": 7,
+   "Monetary": 2832750.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Putri Siregar",
+   "Recency": 20,
+   "Frequency": 10,
+   "Monetary": 2786750.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Putri Suryadi",
+   "Recency": 21,
+   "Frequency": 11,
+   "Monetary": 5752750.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Putri Susanto",
+   "Recency": 147,
+   "Frequency": 9,
+   "Monetary": 8154800.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Putri Utomo",
+   "Recency": 243,
+   "Frequency": 8,
+   "Monetary": 3897500.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Putri Wibowo",
+   "Recency": 2,
+   "Frequency": 14,
+   "Monetary": 6266800.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Putri Wijaya",
+   "Recency": 53,
+   "Frequency": 10,
+   "Monetary": 5612250.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Ratna Andriani",
+   "Recency": 86,
+   "Frequency": 11,
+   "Monetary": 6844500.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Ratna Anggraini",
+   "Recency": 34,
+   "Frequency": 7,
+   "Monetary": 3196500.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Ratna Fauzi",
+   "Recency": 62,
+   "Frequency": 6,
+   "Monetary": 3067000.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Ratna Gunawan",
+   "Recency": 37,
+   "Frequency": 8,
+   "Monetary": 3574600.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Ratna Hakim",
+   "Recency": 32,
+   "Frequency": 12,
+   "Monetary": 4256900.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Ratna Hidayat",
+   "Recency": 136,
+   "Frequency": 7,
+   "Monetary": 3429450.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Ratna Kusuma",
+   "Recency": 84,
+   "Frequency": 7,
+   "Monetary": 2631150.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Ratna Lestari",
+   "Recency": 23,
+   "Frequency": 9,
+   "Monetary": 2610250.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Ratna Mahendra",
+   "Recency": 97,
+   "Frequency": 9,
+   "Monetary": 4663100.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Ratna Nugroho",
+   "Recency": 58,
+   "Frequency": 5,
+   "Monetary": 1136550.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Ratna Permata",
+   "Recency": 121,
+   "Frequency": 10,
+   "Monetary": 3138750.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Ratna Pratama",
+   "Recency": 25,
+   "Frequency": 15,
+   "Monetary": 4034450.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Ratna Purnama",
+   "Recency": 79,
+   "Frequency": 6,
+   "Monetary": 3260000.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Ratna Putra",
+   "Recency": 29,
+   "Frequency": 6,
+   "Monetary": 2126050.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Ratna Rahmawati",
+   "Recency": 39,
+   "Frequency": 15,
+   "Monetary": 4470750.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Ratna Ramadhan",
+   "Recency": 269,
+   "Frequency": 6,
+   "Monetary": 2137700.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Ratna Santoso",
+   "Recency": 53,
+   "Frequency": 10,
+   "Monetary": 3563500.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Ratna Saputra",
+   "Recency": 94,
+   "Frequency": 2,
+   "Monetary": 398250.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Ratna Setiawan",
+   "Recency": 38,
+   "Frequency": 17,
+   "Monetary": 6418250.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Ratna Siregar",
+   "Recency": 88,
+   "Frequency": 9,
+   "Monetary": 4055750.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Ratna Suryadi",
+   "Recency": 17,
+   "Frequency": 10,
+   "Monetary": 11771750.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Ratna Susanto",
+   "Recency": 86,
+   "Frequency": 11,
+   "Monetary": 5913600.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Ratna Utomo",
+   "Recency": 65,
+   "Frequency": 9,
+   "Monetary": 3767700.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Ratna Wibowo",
+   "Recency": 32,
+   "Frequency": 12,
+   "Monetary": 4823250.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Ratna Wijaya",
+   "Recency": 62,
+   "Frequency": 9,
+   "Monetary": 2416000.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Rizky Andriani",
+   "Recency": 144,
+   "Frequency": 10,
+   "Monetary": 4468800.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Rizky Anggraini",
+   "Recency": 136,
+   "Frequency": 8,
+   "Monetary": 2449750.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Rizky Fauzi",
+   "Recency": 137,
+   "Frequency": 10,
+   "Monetary": 4206750.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Rizky Gunawan",
+   "Recency": 18,
+   "Frequency": 16,
+   "Monetary": 8612100.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Rizky Hakim",
+   "Recency": 37,
+   "Frequency": 10,
+   "Monetary": 4155200.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Rizky Hidayat",
+   "Recency": 62,
+   "Frequency": 13,
+   "Monetary": 5611600.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Rizky Kusuma",
+   "Recency": 63,
+   "Frequency": 9,
+   "Monetary": 3770000.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Rizky Lestari",
+   "Recency": 73,
+   "Frequency": 10,
+   "Monetary": 4261750.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Rizky Mahendra",
+   "Recency": 1,
+   "Frequency": 10,
+   "Monetary": 7374600.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Rizky Nugroho",
+   "Recency": 17,
+   "Frequency": 17,
+   "Monetary": 6077250.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Rizky Permata",
+   "Recency": 53,
+   "Frequency": 12,
+   "Monetary": 6353750.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Rizky Pratama",
+   "Recency": 22,
+   "Frequency": 12,
+   "Monetary": 9404900.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Rizky Purnama",
+   "Recency": 67,
+   "Frequency": 11,
+   "Monetary": 3826650.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Rizky Putra",
+   "Recency": 60,
+   "Frequency": 10,
+   "Monetary": 8266000.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Rizky Rahmawati",
+   "Recency": 103,
+   "Frequency": 7,
+   "Monetary": 4664000.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Rizky Ramadhan",
+   "Recency": 9,
+   "Frequency": 11,
+   "Monetary": 3817450.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Rizky Santoso",
+   "Recency": 8,
+   "Frequency": 16,
+   "Monetary": 4720250.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Rizky Saputra",
+   "Recency": 42,
+   "Frequency": 9,
+   "Monetary": 2500500.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Rizky Setiawan",
+   "Recency": 82,
+   "Frequency": 9,
+   "Monetary": 3543750.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Rizky Siregar",
+   "Recency": 36,
+   "Frequency": 17,
+   "Monetary": 3654750.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Rizky Suryadi",
+   "Recency": 97,
+   "Frequency": 12,
+   "Monetary": 4483950.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Rizky Susanto",
+   "Recency": 130,
+   "Frequency": 8,
+   "Monetary": 2342750.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Rizky Utomo",
+   "Recency": 48,
+   "Frequency": 12,
+   "Monetary": 8360650.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Rizky Wibowo",
+   "Recency": 64,
+   "Frequency": 12,
+   "Monetary": 4474750.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Rizky Wijaya",
+   "Recency": 5,
+   "Frequency": 9,
+   "Monetary": 3429500.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Sari Andriani",
+   "Recency": 60,
+   "Frequency": 9,
+   "Monetary": 3978500.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Sari Anggraini",
+   "Recency": 10,
+   "Frequency": 12,
+   "Monetary": 4362500.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Sari Fauzi",
+   "Recency": 43,
+   "Frequency": 6,
+   "Monetary": 2135100.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Sari Gunawan",
+   "Recency": 20,
+   "Frequency": 11,
+   "Monetary": 4023500.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Sari Hakim",
+   "Recency": 224,
+   "Frequency": 9,
+   "Monetary": 1883350.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Sari Hidayat",
+   "Recency": 48,
+   "Frequency": 9,
+   "Monetary": 3777250.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Sari Kusuma",
+   "Recency": 229,
+   "Frequency": 7,
+   "Monetary": 1733500.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Sari Lestari",
+   "Recency": 50,
+   "Frequency": 8,
+   "Monetary": 2904350.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Sari Mahendra",
+   "Recency": 9,
+   "Frequency": 12,
+   "Monetary": 4857250.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Sari Nugroho",
+   "Recency": 16,
+   "Frequency": 17,
+   "Monetary": 6432500.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Sari Permata",
+   "Recency": 135,
+   "Frequency": 12,
+   "Monetary": 3739000.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Sari Pratama",
+   "Recency": 21,
+   "Frequency": 11,
+   "Monetary": 4396650.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Sari Purnama",
+   "Recency": 37,
+   "Frequency": 6,
+   "Monetary": 3799700.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Sari Putra",
+   "Recency": 11,
+   "Frequency": 16,
+   "Monetary": 9818300.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Sari Rahmawati",
+   "Recency": 65,
+   "Frequency": 13,
+   "Monetary": 5100850.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Sari Ramadhan",
+   "Recency": 20,
+   "Frequency": 7,
+   "Monetary": 4017000.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Sari Santoso",
+   "Recency": 10,
+   "Frequency": 15,
+   "Monetary": 5891400.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Sari Saputra",
+   "Recency": 162,
+   "Frequency": 10,
+   "Monetary": 2456000.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Sari Setiawan",
+   "Recency": 26,
+   "Frequency": 11,
+   "Monetary": 5566500.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Sari Siregar",
+   "Recency": 72,
+   "Frequency": 14,
+   "Monetary": 7853900.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Sari Suryadi",
+   "Recency": 22,
+   "Frequency": 10,
+   "Monetary": 4010000.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Sari Susanto",
+   "Recency": 14,
+   "Frequency": 11,
+   "Monetary": 6073000.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Sari Utomo",
+   "Recency": 61,
+   "Frequency": 10,
+   "Monetary": 4770500.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Sari Wibowo",
+   "Recency": 126,
+   "Frequency": 12,
+   "Monetary": 4853750.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Sari Wijaya",
+   "Recency": 26,
+   "Frequency": 12,
+   "Monetary": 2579750.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Satria Andriani",
+   "Recency": 56,
+   "Frequency": 13,
+   "Monetary": 4528250.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Satria Anggraini",
+   "Recency": 33,
+   "Frequency": 15,
+   "Monetary": 8830250.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Satria Fauzi",
+   "Recency": 307,
+   "Frequency": 7,
+   "Monetary": 2418200.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Satria Gunawan",
+   "Recency": 147,
+   "Frequency": 6,
+   "Monetary": 1956800.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Satria Hakim",
+   "Recency": 24,
+   "Frequency": 18,
+   "Monetary": 7989950.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Satria Hidayat",
+   "Recency": 26,
+   "Frequency": 9,
+   "Monetary": 3978000.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Satria Kusuma",
+   "Recency": 109,
+   "Frequency": 12,
+   "Monetary": 2967800.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Satria Lestari",
+   "Recency": 13,
+   "Frequency": 8,
+   "Monetary": 4351000.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Satria Mahendra",
+   "Recency": 134,
+   "Frequency": 9,
+   "Monetary": 3082000.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Satria Nugroho",
+   "Recency": 114,
+   "Frequency": 8,
+   "Monetary": 5718500.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Satria Permata",
+   "Recency": 8,
+   "Frequency": 5,
+   "Monetary": 1401250.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Satria Pratama",
+   "Recency": 31,
+   "Frequency": 13,
+   "Monetary": 6174650.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Satria Purnama",
+   "Recency": 23,
+   "Frequency": 11,
+   "Monetary": 7581650.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Satria Putra",
+   "Recency": 29,
+   "Frequency": 7,
+   "Monetary": 2847750.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Satria Rahmawati",
+   "Recency": 60,
+   "Frequency": 8,
+   "Monetary": 2968000.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Satria Ramadhan",
+   "Recency": 77,
+   "Frequency": 8,
+   "Monetary": 2351200.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Satria Santoso",
+   "Recency": 56,
+   "Frequency": 9,
+   "Monetary": 2652500.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Satria Saputra",
+   "Recency": 28,
+   "Frequency": 13,
+   "Monetary": 5495350.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Satria Setiawan",
+   "Recency": 30,
+   "Frequency": 15,
+   "Monetary": 7055750.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Satria Siregar",
+   "Recency": 96,
+   "Frequency": 12,
+   "Monetary": 6688450.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Satria Suryadi",
+   "Recency": 16,
+   "Frequency": 10,
+   "Monetary": 3539250.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Satria Susanto",
+   "Recency": 48,
+   "Frequency": 9,
+   "Monetary": 5523600.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Satria Utomo",
+   "Recency": 4,
+   "Frequency": 9,
+   "Monetary": 3645950.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Satria Wibowo",
+   "Recency": 75,
+   "Frequency": 6,
+   "Monetary": 2518250.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Satria Wijaya",
+   "Recency": 79,
+   "Frequency": 9,
+   "Monetary": 3796300.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Taufik Andriani",
+   "Recency": 45,
+   "Frequency": 10,
+   "Monetary": 10500500.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Taufik Anggraini",
+   "Recency": 72,
+   "Frequency": 9,
+   "Monetary": 4910650.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Taufik Fauzi",
+   "Recency": 61,
+   "Frequency": 10,
+   "Monetary": 3187100.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Taufik Gunawan",
+   "Recency": 56,
+   "Frequency": 12,
+   "Monetary": 4123700.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Taufik Hakim",
+   "Recency": 84,
+   "Frequency": 8,
+   "Monetary": 6295500.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Taufik Hidayat",
+   "Recency": 77,
+   "Frequency": 10,
+   "Monetary": 4747750.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Taufik Kusuma",
+   "Recency": 257,
+   "Frequency": 9,
+   "Monetary": 5155000.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Taufik Lestari",
+   "Recency": 53,
+   "Frequency": 10,
+   "Monetary": 4377600.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Taufik Mahendra",
+   "Recency": 43,
+   "Frequency": 8,
+   "Monetary": 3339000.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Taufik Nugroho",
+   "Recency": 4,
+   "Frequency": 12,
+   "Monetary": 7114300.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Taufik Permata",
+   "Recency": 12,
+   "Frequency": 10,
+   "Monetary": 3484500.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Taufik Pratama",
+   "Recency": 59,
+   "Frequency": 10,
+   "Monetary": 3855000.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Taufik Purnama",
+   "Recency": 86,
+   "Frequency": 14,
+   "Monetary": 5590250.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Taufik Putra",
+   "Recency": 14,
+   "Frequency": 6,
+   "Monetary": 1473750.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Taufik Rahmawati",
+   "Recency": 6,
+   "Frequency": 9,
+   "Monetary": 12729750.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Taufik Ramadhan",
+   "Recency": 82,
+   "Frequency": 5,
+   "Monetary": 1277500.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Taufik Santoso",
+   "Recency": 71,
+   "Frequency": 15,
+   "Monetary": 6542350.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Taufik Saputra",
+   "Recency": 8,
+   "Frequency": 16,
+   "Monetary": 4492750.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Taufik Setiawan",
+   "Recency": 24,
+   "Frequency": 13,
+   "Monetary": 6142000.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Taufik Siregar",
+   "Recency": 18,
+   "Frequency": 14,
+   "Monetary": 5419800.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Taufik Suryadi",
+   "Recency": 51,
+   "Frequency": 8,
+   "Monetary": 4610250.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Taufik Susanto",
+   "Recency": 106,
+   "Frequency": 6,
+   "Monetary": 1232750.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Taufik Utomo",
+   "Recency": 121,
+   "Frequency": 4,
+   "Monetary": 1999000.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Taufik Wibowo",
+   "Recency": 47,
+   "Frequency": 11,
+   "Monetary": 3232300.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Taufik Wijaya",
+   "Recency": 7,
+   "Frequency": 9,
+   "Monetary": 3987100.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Tiara Andriani",
+   "Recency": 146,
+   "Frequency": 9,
+   "Monetary": 2834500.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Tiara Anggraini",
+   "Recency": 60,
+   "Frequency": 7,
+   "Monetary": 1638500.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Tiara Fauzi",
+   "Recency": 107,
+   "Frequency": 6,
+   "Monetary": 2773750.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Tiara Gunawan",
+   "Recency": 27,
+   "Frequency": 11,
+   "Monetary": 5050600.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Tiara Hakim",
+   "Recency": 81,
+   "Frequency": 11,
+   "Monetary": 3225100.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Tiara Hidayat",
+   "Recency": 7,
+   "Frequency": 7,
+   "Monetary": 1727950.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Tiara Kusuma",
+   "Recency": 89,
+   "Frequency": 5,
+   "Monetary": 4513950.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Tiara Lestari",
+   "Recency": 16,
+   "Frequency": 8,
+   "Monetary": 6574000.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Tiara Mahendra",
+   "Recency": 8,
+   "Frequency": 14,
+   "Monetary": 2779000.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Tiara Nugroho",
+   "Recency": 180,
+   "Frequency": 4,
+   "Monetary": 1351150.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Tiara Permata",
+   "Recency": 68,
+   "Frequency": 6,
+   "Monetary": 1803300.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Tiara Pratama",
+   "Recency": 25,
+   "Frequency": 9,
+   "Monetary": 2228550.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Tiara Purnama",
+   "Recency": 1,
+   "Frequency": 18,
+   "Monetary": 6098900.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Tiara Putra",
+   "Recency": 2,
+   "Frequency": 10,
+   "Monetary": 4683400.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Tiara Rahmawati",
+   "Recency": 14,
+   "Frequency": 10,
+   "Monetary": 3584050.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Tiara Ramadhan",
+   "Recency": 83,
+   "Frequency": 11,
+   "Monetary": 5658350.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Tiara Santoso",
+   "Recency": 99,
+   "Frequency": 10,
+   "Monetary": 3715800.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Tiara Saputra",
+   "Recency": 115,
+   "Frequency": 8,
+   "Monetary": 7425150.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Tiara Setiawan",
+   "Recency": 24,
+   "Frequency": 12,
+   "Monetary": 6722500.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Tiara Siregar",
+   "Recency": 126,
+   "Frequency": 15,
+   "Monetary": 7556500.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Tiara Suryadi",
+   "Recency": 1,
+   "Frequency": 11,
+   "Monetary": 4004750.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Tiara Susanto",
+   "Recency": 212,
+   "Frequency": 11,
+   "Monetary": 3939550.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Tiara Utomo",
+   "Recency": 36,
+   "Frequency": 10,
+   "Monetary": 5689000.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Tiara Wibowo",
+   "Recency": 35,
+   "Frequency": 17,
+   "Monetary": 10353750.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Tiara Wijaya",
+   "Recency": 13,
+   "Frequency": 10,
+   "Monetary": 4487750.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Utami Andriani",
+   "Recency": 105,
+   "Frequency": 13,
+   "Monetary": 4316100.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Utami Anggraini",
+   "Recency": 243,
+   "Frequency": 6,
+   "Monetary": 2523750.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Utami Fauzi",
+   "Recency": 62,
+   "Frequency": 8,
+   "Monetary": 4356050.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Utami Gunawan",
+   "Recency": 29,
+   "Frequency": 10,
+   "Monetary": 4474250.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Utami Hakim",
+   "Recency": 54,
+   "Frequency": 13,
+   "Monetary": 4000750.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Utami Hidayat",
+   "Recency": 181,
+   "Frequency": 15,
+   "Monetary": 4844000.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Utami Kusuma",
+   "Recency": 2,
+   "Frequency": 9,
+   "Monetary": 3454750.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Utami Lestari",
+   "Recency": 13,
+   "Frequency": 9,
+   "Monetary": 2987150.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Utami Mahendra",
+   "Recency": 114,
+   "Frequency": 3,
+   "Monetary": 912250.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Utami Nugroho",
+   "Recency": 13,
+   "Frequency": 9,
+   "Monetary": 2538000.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Utami Permata",
+   "Recency": 41,
+   "Frequency": 9,
+   "Monetary": 2796750.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Utami Pratama",
+   "Recency": 73,
+   "Frequency": 13,
+   "Monetary": 6877250.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Utami Purnama",
+   "Recency": 25,
+   "Frequency": 9,
+   "Monetary": 3168550.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Utami Putra",
+   "Recency": 90,
+   "Frequency": 6,
+   "Monetary": 1881250.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Utami Rahmawati",
+   "Recency": 102,
+   "Frequency": 8,
+   "Monetary": 3203750.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Utami Ramadhan",
+   "Recency": 14,
+   "Frequency": 3,
+   "Monetary": 888250.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Utami Santoso",
+   "Recency": 11,
+   "Frequency": 12,
+   "Monetary": 4051500.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Utami Saputra",
+   "Recency": 124,
+   "Frequency": 6,
+   "Monetary": 2368600.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Utami Setiawan",
+   "Recency": 2,
+   "Frequency": 12,
+   "Monetary": 4543400.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Utami Siregar",
+   "Recency": 5,
+   "Frequency": 10,
+   "Monetary": 6765650.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Utami Suryadi",
+   "Recency": 90,
+   "Frequency": 10,
+   "Monetary": 10739150.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Utami Susanto",
+   "Recency": 36,
+   "Frequency": 6,
+   "Monetary": 2893550.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Utami Utomo",
+   "Recency": 27,
+   "Frequency": 9,
+   "Monetary": 3383100.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Utami Wibowo",
+   "Recency": 3,
+   "Frequency": 11,
+   "Monetary": 4372150.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Utami Wijaya",
+   "Recency": 42,
+   "Frequency": 9,
+   "Monetary": 2667750.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Vina Andriani",
+   "Recency": 9,
+   "Frequency": 13,
+   "Monetary": 5182350.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Vina Anggraini",
+   "Recency": 24,
+   "Frequency": 3,
+   "Monetary": 1233000.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Vina Fauzi",
+   "Recency": 60,
+   "Frequency": 9,
+   "Monetary": 4043100.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Vina Gunawan",
+   "Recency": 1,
+   "Frequency": 7,
+   "Monetary": 4273800.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Vina Hakim",
+   "Recency": 34,
+   "Frequency": 12,
+   "Monetary": 7384450.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Vina Hidayat",
+   "Recency": 3,
+   "Frequency": 11,
+   "Monetary": 4164100.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Vina Kusuma",
+   "Recency": 36,
+   "Frequency": 9,
+   "Monetary": 5118650.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Vina Lestari",
+   "Recency": 167,
+   "Frequency": 10,
+   "Monetary": 6250850.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Vina Mahendra",
+   "Recency": 233,
+   "Frequency": 6,
+   "Monetary": 1134000.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Vina Nugroho",
+   "Recency": 51,
+   "Frequency": 13,
+   "Monetary": 5407650.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Vina Permata",
+   "Recency": 40,
+   "Frequency": 6,
+   "Monetary": 1971000.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Vina Pratama",
+   "Recency": 99,
+   "Frequency": 11,
+   "Monetary": 2263250.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Vina Purnama",
+   "Recency": 329,
+   "Frequency": 2,
+   "Monetary": 403500.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Vina Putra",
+   "Recency": 8,
+   "Frequency": 13,
+   "Monetary": 4000500.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Vina Rahmawati",
+   "Recency": 4,
+   "Frequency": 14,
+   "Monetary": 5830700.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Vina Ramadhan",
+   "Recency": 12,
+   "Frequency": 11,
+   "Monetary": 3793000.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Vina Santoso",
+   "Recency": 13,
+   "Frequency": 7,
+   "Monetary": 5543000.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Vina Saputra",
+   "Recency": 33,
+   "Frequency": 19,
+   "Monetary": 7340050.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Vina Setiawan",
+   "Recency": 311,
+   "Frequency": 9,
+   "Monetary": 2485000.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Vina Siregar",
+   "Recency": 158,
+   "Frequency": 9,
+   "Monetary": 2221750.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Vina Suryadi",
+   "Recency": 27,
+   "Frequency": 18,
+   "Monetary": 5346650.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Vina Susanto",
+   "Recency": 38,
+   "Frequency": 9,
+   "Monetary": 2227500.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Vina Utomo",
+   "Recency": 15,
+   "Frequency": 9,
+   "Monetary": 2873000.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Vina Wibowo",
+   "Recency": 49,
+   "Frequency": 13,
+   "Monetary": 6646800.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Vina Wijaya",
+   "Recency": 18,
+   "Frequency": 12,
+   "Monetary": 10326100.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Wahyu Andriani",
+   "Recency": 19,
+   "Frequency": 9,
+   "Monetary": 3466000.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Wahyu Anggraini",
+   "Recency": 35,
+   "Frequency": 4,
+   "Monetary": 2773200.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Wahyu Fauzi",
+   "Recency": 185,
+   "Frequency": 11,
+   "Monetary": 3749850.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Wahyu Gunawan",
+   "Recency": 201,
+   "Frequency": 8,
+   "Monetary": 4946250.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Wahyu Hakim",
+   "Recency": 10,
+   "Frequency": 13,
+   "Monetary": 3942950.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Wahyu Hidayat",
+   "Recency": 47,
+   "Frequency": 7,
+   "Monetary": 1859000.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Wahyu Kusuma",
+   "Recency": 112,
+   "Frequency": 12,
+   "Monetary": 7021250.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Wahyu Lestari",
+   "Recency": 170,
+   "Frequency": 9,
+   "Monetary": 3273000.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Wahyu Mahendra",
+   "Recency": 1,
+   "Frequency": 12,
+   "Monetary": 3907550.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Wahyu Nugroho",
+   "Recency": 9,
+   "Frequency": 13,
+   "Monetary": 5533500.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Wahyu Permata",
+   "Recency": 36,
+   "Frequency": 18,
+   "Monetary": 6263250.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Wahyu Pratama",
+   "Recency": 43,
+   "Frequency": 13,
+   "Monetary": 4777750.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Wahyu Purnama",
+   "Recency": 109,
+   "Frequency": 11,
+   "Monetary": 2688250.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Wahyu Putra",
+   "Recency": 55,
+   "Frequency": 16,
+   "Monetary": 3880950.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Wahyu Rahmawati",
+   "Recency": 127,
+   "Frequency": 8,
+   "Monetary": 3230250.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Wahyu Ramadhan",
+   "Recency": 183,
+   "Frequency": 5,
+   "Monetary": 2853500.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Wahyu Santoso",
+   "Recency": 33,
+   "Frequency": 13,
+   "Monetary": 6037200.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Wahyu Saputra",
+   "Recency": 17,
+   "Frequency": 7,
+   "Monetary": 2479850.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Wahyu Setiawan",
+   "Recency": 16,
+   "Frequency": 10,
+   "Monetary": 2817750.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Wahyu Siregar",
+   "Recency": 66,
+   "Frequency": 9,
+   "Monetary": 3868000.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Wahyu Suryadi",
+   "Recency": 10,
+   "Frequency": 14,
+   "Monetary": 4747900.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Wahyu Susanto",
+   "Recency": 65,
+   "Frequency": 8,
+   "Monetary": 2557250.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Wahyu Utomo",
+   "Recency": 76,
+   "Frequency": 7,
+   "Monetary": 2863750.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Wahyu Wibowo",
+   "Recency": 119,
+   "Frequency": 9,
+   "Monetary": 2581500.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Wahyu Wijaya",
+   "Recency": 40,
+   "Frequency": 16,
+   "Monetary": 4462800.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Yoga Andriani",
+   "Recency": 47,
+   "Frequency": 16,
+   "Monetary": 11485500.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Yoga Anggraini",
+   "Recency": 49,
+   "Frequency": 9,
+   "Monetary": 2838000.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Yoga Fauzi",
+   "Recency": 157,
+   "Frequency": 7,
+   "Monetary": 2051800.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Yoga Gunawan",
+   "Recency": 59,
+   "Frequency": 7,
+   "Monetary": 5087500.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Yoga Hakim",
+   "Recency": 96,
+   "Frequency": 7,
+   "Monetary": 3015000.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Yoga Hidayat",
+   "Recency": 98,
+   "Frequency": 12,
+   "Monetary": 3539250.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Yoga Kusuma",
+   "Recency": 29,
+   "Frequency": 13,
+   "Monetary": 3921200.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Yoga Lestari",
+   "Recency": 24,
+   "Frequency": 12,
+   "Monetary": 4324600.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Yoga Mahendra",
+   "Recency": 70,
+   "Frequency": 9,
+   "Monetary": 1595250.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Yoga Nugroho",
+   "Recency": 241,
+   "Frequency": 7,
+   "Monetary": 1665750.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Yoga Permata",
+   "Recency": 29,
+   "Frequency": 6,
+   "Monetary": 2185000.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Yoga Pratama",
+   "Recency": 143,
+   "Frequency": 7,
+   "Monetary": 2493250.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Yoga Purnama",
+   "Recency": 85,
+   "Frequency": 12,
+   "Monetary": 3166500.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Yoga Putra",
+   "Recency": 32,
+   "Frequency": 11,
+   "Monetary": 8486300.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Yoga Rahmawati",
+   "Recency": 120,
+   "Frequency": 11,
+   "Monetary": 6875900.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Yoga Ramadhan",
+   "Recency": 16,
+   "Frequency": 8,
+   "Monetary": 2974350.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Yoga Santoso",
+   "Recency": 140,
+   "Frequency": 8,
+   "Monetary": 1382500.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Yoga Saputra",
+   "Recency": 63,
+   "Frequency": 9,
+   "Monetary": 1424000.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Yoga Setiawan",
+   "Recency": 73,
+   "Frequency": 8,
+   "Monetary": 2563000.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Yoga Siregar",
+   "Recency": 76,
+   "Frequency": 10,
+   "Monetary": 3822100.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Yoga Suryadi",
+   "Recency": 15,
+   "Frequency": 11,
+   "Monetary": 4085900.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Yoga Susanto",
+   "Recency": 93,
+   "Frequency": 10,
+   "Monetary": 3630000.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Yoga Utomo",
+   "Recency": 243,
+   "Frequency": 5,
+   "Monetary": 1017500.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Yoga Wibowo",
+   "Recency": 43,
+   "Frequency": 8,
+   "Monetary": 10381800.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Yoga Wijaya",
+   "Recency": 7,
+   "Frequency": 17,
+   "Monetary": 9318350.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Yuni Andriani",
+   "Recency": 13,
+   "Frequency": 11,
+   "Monetary": 4822200.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Yuni Anggraini",
+   "Recency": 21,
+   "Frequency": 14,
+   "Monetary": 7784750.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Yuni Fauzi",
+   "Recency": 15,
+   "Frequency": 11,
+   "Monetary": 5579800.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Yuni Gunawan",
+   "Recency": 33,
+   "Frequency": 12,
+   "Monetary": 3064750.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Yuni Hakim",
+   "Recency": 33,
+   "Frequency": 8,
+   "Monetary": 5038500.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Yuni Hidayat",
+   "Recency": 40,
+   "Frequency": 17,
+   "Monetary": 6126100.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Yuni Kusuma",
+   "Recency": 21,
+   "Frequency": 15,
+   "Monetary": 6910750.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Yuni Lestari",
+   "Recency": 5,
+   "Frequency": 11,
+   "Monetary": 2888300.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Yuni Mahendra",
+   "Recency": 50,
+   "Frequency": 10,
+   "Monetary": 4765500.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Yuni Nugroho",
+   "Recency": 186,
+   "Frequency": 8,
+   "Monetary": 4863450.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Yuni Permata",
+   "Recency": 33,
+   "Frequency": 9,
+   "Monetary": 4380000.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Yuni Pratama",
+   "Recency": 115,
+   "Frequency": 12,
+   "Monetary": 2271500.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Yuni Purnama",
+   "Recency": 38,
+   "Frequency": 19,
+   "Monetary": 5184850.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Yuni Putra",
+   "Recency": 14,
+   "Frequency": 12,
+   "Monetary": 4679100.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Yuni Rahmawati",
+   "Recency": 262,
+   "Frequency": 8,
+   "Monetary": 2906850.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Yuni Ramadhan",
+   "Recency": 5,
+   "Frequency": 12,
+   "Monetary": 5044750.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Yuni Santoso",
+   "Recency": 114,
+   "Frequency": 5,
+   "Monetary": 1815500.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Yuni Saputra",
+   "Recency": 74,
+   "Frequency": 17,
+   "Monetary": 5507750.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Yuni Setiawan",
+   "Recency": 89,
+   "Frequency": 7,
+   "Monetary": 3612250.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Yuni Siregar",
+   "Recency": 200,
+   "Frequency": 6,
+   "Monetary": 2376800.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Yuni Suryadi",
+   "Recency": 9,
+   "Frequency": 16,
+   "Monetary": 5955400.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Yuni Susanto",
+   "Recency": 102,
+   "Frequency": 11,
+   "Monetary": 4648300.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Yuni Utomo",
+   "Recency": 15,
+   "Frequency": 9,
+   "Monetary": 1627000.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Yuni Wibowo",
+   "Recency": 192,
+   "Frequency": 7,
+   "Monetary": 4163000.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Yuni Wijaya",
+   "Recency": 51,
+   "Frequency": 8,
+   "Monetary": 3003500.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Zainal Andriani",
+   "Recency": 78,
+   "Frequency": 11,
+   "Monetary": 5134800.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Zainal Anggraini",
+   "Recency": 181,
+   "Frequency": 10,
+   "Monetary": 5521450.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Zainal Fauzi",
+   "Recency": 99,
+   "Frequency": 6,
+   "Monetary": 2402500.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Zainal Gunawan",
+   "Recency": 29,
+   "Frequency": 11,
+   "Monetary": 11371100.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Zainal Hakim",
+   "Recency": 129,
+   "Frequency": 5,
+   "Monetary": 1527800.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Zainal Hidayat",
+   "Recency": 109,
+   "Frequency": 8,
+   "Monetary": 2435500.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Zainal Kusuma",
+   "Recency": 17,
+   "Frequency": 7,
+   "Monetary": 2828250.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Zainal Lestari",
+   "Recency": 2,
+   "Frequency": 7,
+   "Monetary": 3433250.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Zainal Mahendra",
+   "Recency": 96,
+   "Frequency": 10,
+   "Monetary": 5605250.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Zainal Nugroho",
+   "Recency": 41,
+   "Frequency": 9,
+   "Monetary": 3278000.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Zainal Permata",
+   "Recency": 11,
+   "Frequency": 10,
+   "Monetary": 4111900.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Zainal Pratama",
+   "Recency": 193,
+   "Frequency": 8,
+   "Monetary": 4484000.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Zainal Purnama",
+   "Recency": 32,
+   "Frequency": 13,
+   "Monetary": 5625950.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Zainal Putra",
+   "Recency": 39,
+   "Frequency": 9,
+   "Monetary": 7321050.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Zainal Rahmawati",
+   "Recency": 40,
+   "Frequency": 10,
+   "Monetary": 2687000.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Zainal Ramadhan",
+   "Recency": 105,
+   "Frequency": 9,
+   "Monetary": 5156300.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Zainal Santoso",
+   "Recency": 59,
+   "Frequency": 11,
+   "Monetary": 4118750.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Zainal Saputra",
+   "Recency": 20,
+   "Frequency": 19,
+   "Monetary": 8410300.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Zainal Setiawan",
+   "Recency": 25,
+   "Frequency": 12,
+   "Monetary": 3689800.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Zainal Siregar",
+   "Recency": 213,
+   "Frequency": 9,
+   "Monetary": 5071750.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Zainal Suryadi",
+   "Recency": 9,
+   "Frequency": 13,
+   "Monetary": 4921600.0,
+   "Cluster": 1,
+   "Segmen": "Pelanggan Potensial"
+  },
+  {
+   "Nama_Pelanggan": "Zainal Susanto",
+   "Recency": 104,
+   "Frequency": 11,
+   "Monetary": 3811350.0,
+   "Cluster": 2,
+   "Segmen": "Pelanggan Bernilai Sedang"
+  },
+  {
+   "Nama_Pelanggan": "Zainal Utomo",
+   "Recency": 90,
+   "Frequency": 7,
+   "Monetary": 1814250.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  },
+  {
+   "Nama_Pelanggan": "Zainal Wibowo",
+   "Recency": 14,
+   "Frequency": 16,
+   "Monetary": 6613750.0,
+   "Cluster": 0,
+   "Segmen": "Pelanggan Bernilai Tinggi"
+  },
+  {
+   "Nama_Pelanggan": "Zainal Wijaya",
+   "Recency": 120,
+   "Frequency": 7,
+   "Monetary": 1615500.0,
+   "Cluster": 3,
+   "Segmen": "Pelanggan Berisiko Churn"
+  }
+ ]
+}

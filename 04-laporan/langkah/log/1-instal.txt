@@ -1,0 +1,12 @@
+$ python3 -m venv .venv --system-site-packages
+$ .venv/bin/pip install openpyxl statsmodels python-docx
+
+[notice] A new release of pip is available: 25.1.1 -> 26.3
+[notice] To update, run: .venv/bin/python3 -m pip install --upgrade pip
+matplotlib                3.11.2
+matplotlib-inline         0.2.2
+openpyxl                  3.1.5
+pandas                    3.0.5
+python-docx               1.2.0
+scikit-learn              1.9.1
+statsmodels               0.15.0

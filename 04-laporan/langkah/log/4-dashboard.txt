@@ -1,0 +1,5 @@
+index.html ditulis: 2.55 MB
+  transaksi : 10000 baris
+  produk    : 25 SKU
+  cluster   : k=4 sil=0.2824 titik=1000
+  forecast  : SARIMA(0,1,1)(0,1,0,12) MAPE=3.02%

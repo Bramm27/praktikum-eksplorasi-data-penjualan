@@ -1,0 +1,67 @@
+{
+ "baris": 10000,
+ "kolom": 18,
+ "sel_kosong": 0,
+ "duplikat_id": 0,
+ "tanggal_min": "2025-01-01",
+ "tanggal_max": "2026-10-31",
+ "profit_negatif": 0,
+ "diskon_min": 0.0,
+ "diskon_max": 0.2,
+ "diskon_rata": 0.04,
+ "qty_min": 1,
+ "qty_max": 15,
+ "qty_rata": 2.17,
+ "pelanggan_unik": 1000,
+ "produk_unik": 25,
+ "kota_unik": 10,
+ "trx_per_pelanggan": 10.0,
+ "cek_subtotal": 0,
+ "cek_total": 0,
+ "cek_profit": 5384,
+ "bulan": 22,
+ "kota_list": [
+  "Balikpapan",
+  "Bandung",
+  "Denpasar",
+  "Jakarta",
+  "Makassar",
+  "Malang",
+  "Medan",
+  "Semarang",
+  "Surabaya",
+  "Yogyakarta"
+ ],
+ "channel_list": [
+  "Shopee",
+  "TikTok Shop",
+  "Toko Offline",
+  "Tokopedia",
+  "Website Resmi"
+ ],
+ "bayar_list": [
+  "COD",
+  "E-Wallet",
+  "Kartu Kredit",
+  "QRIS",
+  "Transfer Bank",
+  "Virtual Account"
+ ],
+ "segmen_list": [
+  "Korporat",
+  "Member Gold",
+  "Member Silver",
+  "Reguler"
+ ],
+ "produk_kolom": [
+  "Kode_Produk",
+  "Kategori_Produk",
+  "Nama_Produk",
+  "Harga_Satuan (Rp)",
+  "HPP_Satuan (Rp)",
+  "Margin_Unit (Rp)",
+  "Margin (%)"
+ ],
+ "margin_min": 0.35,
+ "margin_max": 0.56
+}

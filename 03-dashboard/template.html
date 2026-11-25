@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dashboard Penjualan Retail — Analisis Praktikum</title>
+<style>
+:root{
+  --bg:#f5f7fb; --card:#ffffff; --ink:#0f172a; --muted:#64748b; --line:#e2e8f0;
+  --brand:#4f46e5; --brand-2:#0ea5e9; --ok:#059669; --warn:#d97706; --bad:#dc2626;
+  --r:14px; --shadow:0 1px 2px rgba(15,23,42,.06),0 8px 24px -12px rgba(15,23,42,.18);
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:"Inter","Segoe UI",system-ui,-apple-system,"Helvetica Neue",Arial,sans-serif;
+  font-size:14px;line-height:1.5;-webkit-font-smoothing:antialiased}
+h1,h2,h3{margin:0;font-weight:700;letter-spacing:-.01em}
+a{color:var(--brand)}
+.wrap{max-width:1320px;margin:0 auto;padding:0 20px 56px}
+header.top{background:linear-gradient(120deg,#0f172a 0%,#1e293b 55%,#312e81 100%);color:#fff;padding:22px 0 0}
+header.top .wrap{padding-bottom:0}
+.brandrow{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.logo{width:38px;height:38px;border-radius:11px;background:linear-gradient(135deg,var(--brand),var(--brand-2));
+  display:grid;place-items:center;font-weight:800;font-size:16px;color:#fff}
+header.top h1{font-size:19px}
+header.top .sub{color:#cbd5e1;font-size:12.5px;margin-top:2px}
+.tabs{display:flex;gap:6px;margin-top:20px;flex-wrap:wrap}
+.tab{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);color:#e2e8f0;
+  padding:9px 16px;border-radius:10px 10px 0 0;border-bottom:none;cursor:pointer;font-size:13px;font-weight:600}
+.tab.on{background:var(--bg);color:var(--ink);border-color:var(--bg)}
+.tab:hover{background:rgba(255,255,255,.14)}
+main{padding-top:22px}
+.grid{display:grid;gap:16px}
+.g6{grid-template-columns:repeat(6,1fr)}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g2{grid-template-columns:repeat(2,1fr)}
+.g21{grid-template-columns:2fr 1fr}
+.g12{grid-template-columns:1fr 2fr}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--shadow);padding:16px 18px}
+.card h3{font-size:13.5px;color:var(--ink)}
+.card .hint{font-size:11.5px;color:var(--muted);margin-top:2px}
+.kpi .lbl{font-size:11.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;font-weight:600}
+.kpi .val{font-size:20px;font-weight:800;margin-top:6px;letter-spacing:-.02em}
+.kpi .delta{font-size:11.5px;margin-top:4px;color:var(--muted)}
+.up{color:var(--ok);font-weight:700}.down{color:var(--bad);font-weight:700}
+table{width:100%;border-collapse:collapse;font-size:12.5px}
+th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);white-space:nowrap}
+th{font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);background:#f8fafc;position:sticky;top:0;z-index:2}
+tbody tr:hover{background:#f8fafc}
+.num{text-align:right;font-variant-numeric:tabular-nums}
+.scroll{overflow:auto;border:1px solid var(--line);border-radius:10px;max-height:520px}
+.toolbar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:12px}
+input,select,button{font:inherit}
+input[type=text],input[type=number],input[type=date],select{
+  border:1px solid var(--line);background:#fff;border-radius:9px;padding:8px 10px;font-size:12.5px;color:var(--ink);outline:none}
+input:focus,select:focus{border-color:var(--brand);box-shadow:0 0 0 3px rgba(79,70,229,.12)}
+button{border:none;border-radius:9px;padding:9px 15px;font-size:12.5px;font-weight:700;cursor:pointer}
+.btn-primary{background:var(--brand);color:#fff}
+.btn-primary:hover{background:#4338ca}
+.btn-ghost{background:#eef2ff;color:#3730a3}
+.btn-ghost:hover{background:#e0e7ff}
+.btn-sm{padding:6px 11px;font-size:12px}
+.pager{display:flex;gap:8px;align-items:center;justify-content:flex-end;margin-top:10px;font-size:12px;color:var(--muted)}
+.badge{display:inline-block;padding:2px 8px;border-radius:999px;font-size:11px;font-weight:700}
+.b-ok{background:#ecfdf5;color:#047857}.b-warn{background:#fffbeb;color:#b45309}
+.b-bad{background:#fef2f2;color:#b91c1c}.b-info{background:#eff6ff;color:#1d4ed8}
+.formgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.formgrid label{display:block;font-size:11px;color:var(--muted);font-weight:600;margin-bottom:4px;text-transform:uppercase;letter-spacing:.04em}
+.formgrid .fld input,.formgrid .fld select{width:100%}
+.legend{display:flex;gap:14px;flex-wrap:wrap;font-size:11.5px;color:var(--muted);margin-top:8px}
+.dot{width:9px;height:9px;border-radius:50%;display:inline-block;margin-right:5px}
+.tooltip{position:fixed;pointer-events:none;background:#0f172a;color:#fff;padding:6px 9px;border-radius:7px;
+  font-size:11.5px;opacity:0;transition:opacity .12s;z-index:99;white-space:nowrap}
+.seg{display:flex;flex-direction:column;gap:2px}
+.seg .t{font-size:12px;font-weight:700}
+.seg .m{font-size:11.5px;color:var(--muted)}
+.pill{font-size:11px;background:#eef2ff;color:#3730a3;border-radius:999px;padding:2px 8px;font-weight:700}
+.note{font-size:11.5px;color:var(--muted);background:#f8fafc;border-left:3px solid var(--brand);padding:9px 12px;border-radius:0 8px 8px 0;margin-top:12px}
+footer{margin-top:26px;font-size:11.5px;color:var(--muted);text-align:center}
+@media(max-width:1100px){.g6{grid-template-columns:repeat(3,1fr)}.g21,.g12,.g3{grid-template-columns:1fr}}
+@media(max-width:680px){.g6,.g2{grid-template-columns:repeat(2,1fr)}.formgrid{grid-template-columns:1fr 1fr}}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <div class="brandrow">
+      <div class="logo">RP</div>
+      <div>
+        <h1>Dashboard Penjualan Retail</h1>
+        <div class="sub">Dataset Transaksi Penjualan 10.000 baris · Januari 2025 – Oktober 2026</div>
+      </div>
+    </div>
+    <nav class="tabs" id="tabs">
+      <button class="tab on" data-tab="dashboard">Dashboard Penjualan</button>
+      <button class="tab" data-tab="transaksi">Data Transaksi</button>
+      <button class="tab" data-tab="produk">Master Produk</button>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <!-- ============ DASHBOARD ============ -->
+  <section id="tab-dashboard">
+    <div class="grid g6" id="kpi"></div>
+
+    <div class="grid g21" style="margin-top:16px">
+      <div class="card">
+        <h3>Tren Penjualan Bulanan &amp; Proyeksi 3 Bulan</h3>
+        <div class="hint" id="fc-meta"></div>
+        <div id="chart-line"></div>
+        <div class="legend">
+          <span><span class="dot" style="background:#4f46e5"></span>Aktual</span>
+          <span><span class="dot" style="background:#0ea5e9"></span>Proyeksi model terpilih</span>
+          <span><span class="dot" style="background:#cbd5e1"></span>Batas uji (3 bulan terakhir)</span>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Komposisi Kategori Produk</h3>
+        <div class="hint">Kontribusi penjualan per kategori</div>
+        <div id="chart-donut"></div>
+      </div>
+    </div>
+
+    <div class="grid g12" style="margin-top:16px">
+      <div class="card">
+        <h3>Penjualan per Kota</h3>
+        <div class="hint">10 kota, nilai dalam juta rupiah</div>
+        <div id="chart-kota"></div>
+      </div>
+      <div class="card">
+        <h3>Peta Sebaran Penjualan per Provinsi</h3>
+        <div class="hint">Warna makin gelap = penjualan makin besar, skala miliar rupiah (kota dipetakan ke provinsi)</div>
+        <div id="chart-map"></div>
+        <div class="legend" id="map-legend"></div>
+      </div>
+    </div>
+
+    <div class="grid g2" style="margin-top:16px">
+      <div class="card">
+        <h3>Kanal Penjualan</h3>
+        <div class="hint">Nilai transaksi dan jumlah transaksi</div>
+        <div id="chart-channel"></div>
+      </div>
+      <div class="card">
+        <h3>Segmen Pelanggan (RFM + K-Means, k=4)</h3>
+        <div class="hint">Sebaran Recency vs Monetary, warna = cluster</div>
+        <div id="chart-scatter"></div>
+      </div>
+    </div>
+
+    <div class="grid g2" style="margin-top:16px">
+      <div class="card">
+        <h3>Profil Cluster Pelanggan</h3>
+        <div class="scroll" style="max-height:none"><table id="tbl-cluster"></table></div>
+      </div>
+      <div class="card">
+        <h3>Perbandingan Model Peramalan</h3>
+        <div class="hint">MAPE pada 3 bulan uji (Agu–Okt 2026) dan backtest rolling-origin</div>
+        <div class="scroll" style="max-height:none"><table id="tbl-model"></table></div>
+        <div class="note" id="fc-note"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TRANSAKSI ============ -->
+  <section id="tab-transaksi" hidden>
+    <div class="card">
+      <h3>Tambah Transaksi Baru</h3>
+      <div class="hint">Data masuk ke tabel di bawah dan langsung memperbarui KPI dashboard pada sesi ini.</div>
+      <form id="form-trx" style="margin-top:14px">
+        <div class="formgrid">
+          <div class="fld"><label>Tanggal</label><input type="date" name="Tanggal" required></div>
+          <div class="fld"><label>Nama Pelanggan</label><input type="text" name="Nama_Pelanggan" placeholder="Nama lengkap" required></div>
+          <div class="fld"><label>Segmen</label><select name="Segmen_Pelanggan" id="sel-segmen"></select></div>
+          <div class="fld"><label>Kota</label><select name="Kota" id="sel-kota"></select></div>
+          <div class="fld"><label>Channel</label><select name="Channel_Penjualan" id="sel-channel"></select></div>
+          <div class="fld"><label>Produk</label><select name="Nama_Produk" id="sel-produk"></select></div>
+          <div class="fld"><label>Qty</label><input type="number" name="Qty" min="1" value="1" required></div>
+          <div class="fld"><label>Diskon (%)</label><input type="number" name="Diskon_Pct" min="0" max="100" step="1" value="0"></div>
+          <div class="fld"><label>Metode Bayar</label><select name="Metode_Pembayaran" id="sel-bayar"></select></div>
+          <div class="fld"><label>Status</label><select name="Status_Transaksi" id="sel-status"></select></div>
+          <div class="fld" style="display:flex;align-items:flex-end;gap:8px;grid-column:span 2">
+            <button type="submit" class="btn-primary">Simpan Transaksi</button>
+            <button type="reset" class="btn-ghost">Reset</button>
+          </div>
+        </div>
+      </form>
+      <div class="note" id="form-msg" hidden></div>
+    </div>
+
+    <div class="card" style="margin-top:16px">
+      <h3>Data Transaksi</h3>
+      <div class="hint" id="trx-meta"></div>
+      <div class="toolbar" style="margin-top:12px">
+        <input type="text" id="q" placeholder="Cari ID / nama / produk…" style="min-width:230px">
+        <select id="f-kota"><option value="">Semua kota</option></select>
+        <select id="f-kategori"><option value="">Semua kategori</option></select>
+        <select id="f-status"><option value="">Semua status</option></select>
+        <select id="f-channel"><option value="">Semua channel</option></select>
+        <button class="btn-ghost btn-sm" id="btn-reset">Reset filter</button>
+        <span class="pill" id="trx-count"></span>
+      </div>
+      <div class="scroll"><table id="tbl-trx"></table></div>
+      <div class="pager">
+        <button class="btn-ghost btn-sm" id="prev">← Sebelumnya</button>
+        <span id="page-info"></span>
+        <button class="btn-ghost btn-sm" id="next">Berikutnya →</button>
+        <select id="per-page"><option>25</option><option>50</option><option>100</option></select>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PRODUK ============ -->
+  <section id="tab-produk" hidden>
+    <div class="card">
+      <h3>Master Produk</h3>
+      <div class="hint" id="produk-meta">25 SKU aktif beserta margin per unit</div>
+      <div class="scroll" style="max-height:none;margin-top:12px"><table id="tbl-produk"></table></div>
+    </div>
+    <div class="card" style="margin-top:16px">
+      <h3>Tambah Produk</h3>
+      <form id="form-produk" style="margin-top:14px">
+        <div class="formgrid">
+          <div class="fld"><label>Kode Produk</label><input type="text" name="Kode_Produk" placeholder="PRD-026" required></div>
+          <div class="fld"><label>Kategori</label><select name="Kategori_Produk" id="sel-kat-produk"></select></div>
+          <div class="fld"><label>Nama Produk</label><input type="text" name="Nama_Produk" placeholder="Nama produk" required></div>
+          <div class="fld"><label>Harga Satuan (Rp)</label><input type="number" name="harga" min="0" required></div>
+          <div class="fld"><label>HPP Satuan (Rp)</label><input type="number" name="hpp" min="0" required></div>
+          <div class="fld" style="display:flex;align-items:flex-end"><button type="submit" class="btn-primary">Tambah Produk</button></div>
+        </div>
+      </form>
+      <div class="note" id="produk-msg" hidden></div>
+    </div>
+  </section>
+
+  <footer>Laporan Praktikum Eksplorasi Data · Putri Okta Fitria A · 3325600084</footer>
+</main>
+<div class="tooltip" id="tip"></div>
+
+<script>
+const DATA = /*__DATA__*/;
+const fmtRp = n => "Rp " + Math.round(n).toLocaleString("id-ID");
+const fmtJt = n => (n/1e6).toLocaleString("id-ID",{maximumFractionDigits:1}) + " jt";
+const fmtNum = n => Math.round(n).toLocaleString("id-ID");
+const pct = n => (n).toLocaleString("id-ID",{maximumFractionDigits:1}) + "%";
+const esc = s => String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+/* ---------- state ---------- */
+const state = {
+  rows: DATA.transaksi.map(r => ({
+    ID_Transaksi:r[0], Tanggal:r[1], Nama_Pelanggan:r[2], Segmen_Pelanggan:r[3], Kota:r[4],
+    Channel_Penjualan:r[5], Kategori_Produk:r[6], Nama_Produk:r[7], Qty:r[8], Harga_Satuan:r[9],
+    Diskon_Pct:r[10], Subtotal:r[11], Nilai_Diskon:r[12], Total_Penjualan:r[13], HPP_Satuan:r[14],
+    Profit:r[15], Metode_Pembayaran:r[16], Status_Transaksi:r[17], _baru:false
+  })),
+  produk: DATA.produk.map(p => ({Kode_Produk:p[0],Kategori_Produk:p[1],Nama_Produk:p[2],
+    "Harga_Satuan (Rp)":p[3],"HPP_Satuan (Rp)":p[4],"Margin_Unit (Rp)":p[5],"Margin (%)":p[6]})),
+  page:1, perPage:25, filter:{q:"",kota:"",kategori:"",status:"",channel:""},
+  tab:"dashboard"
+};
+
+/* ---------- agregasi ---------- */
+function agg(rows, key){
+  const m = new Map();
+  rows.forEach(r => {
+    const k = r[key]; const o = m.get(k) || {key:k, total:0, trx:0, qty:0, profit:0};
+    o.total += r.Total_Penjualan; o.trx += 1; o.qty += r.Qty; o.profit += r.Profit;
+    m.set(k, o);
+  });
+  return [...m.values()].sort((a,b)=>b.total-a.total);
+}
+function bulanan(rows){
+  const m = new Map();
+  rows.forEach(r => {
+    const k = String(r.Tanggal).slice(0,7);
+    const o = m.get(k) || {key:k,total:0,trx:0};
+    o.total += r.Total_Penjualan; o.trx += 1; m.set(k,o);
+  });
+  return [...m.values()].sort((a,b)=>a.key<b.key?-1:1);
+}
+
+/* ---------- chart primitives ---------- */
+function svg(w,h,inner){ return `<svg viewBox="0 0 ${w} ${h}" width="100%" height="auto" role="img">${inner}</svg>`; }
+function niceMax(v){ const p=Math.pow(10,Math.floor(Math.log10(v||1))); const n=v/p; const s=n<=1?1:n<=2?2:n<=2.5?2.5:n<=5?5:10; return s*p; }
+const TIP = document.getElementById("tip");
+function tipAttr(text){ return `data-tip="${esc(text)}"`; }
+document.addEventListener("mouseover", e => {
+  const t = e.target.closest("[data-tip]");
+  if(!t){ TIP.style.opacity=0; return; }
+  TIP.textContent = t.getAttribute("data-tip"); TIP.style.opacity=1;
+  const r = t.getBoundingClientRect();
+  TIP.style.left = Math.min(window.innerWidth-220, r.left) + "px";
+  TIP.style.top = Math.max(8, r.top - 32) + "px";
+});
+document.addEventListener("mouseout", e => { if(e.target.closest("[data-tip]")) TIP.style.opacity=0; });
+
+function lineChart(labels, series, opts={}){
+  const W=760,H=300,P={l:58,r:16,t:16,b:34};
+  const all = series.flatMap(s=>s.data).filter(v=>v!=null);
+  const max = niceMax(Math.max(...all)*1.08);
+  const iw=W-P.l-P.r, ih=H-P.t-P.b;
+  const x=i=>P.l+(labels.length===1?iw/2:iw*i/(labels.length-1));
+  const y=v=>P.t+ih-(v/max)*ih;
+  let g="";
+  for(let k=0;k<=4;k++){ const v=max*k/4, yy=y(v);
+    g+=`<line x1="${P.l}" y1="${yy}" x2="${W-P.r}" y2="${yy}" stroke="#eef2f7"/>
+        <text x="${P.l-8}" y="${yy+4}" text-anchor="end" font-size="10" fill="#94a3b8">${(v/1e6).toFixed(0)} jt</text>`; }
+  labels.forEach((lb,i)=>{ if(i%2===0||labels.length<14)
+    g+=`<text x="${x(i)}" y="${H-12}" text-anchor="middle" font-size="10" fill="#94a3b8">${lb.slice(2)}</text>`; });
+  if(opts.splitIndex!=null){
+    const xs=x(opts.splitIndex);
+    g+=`<rect x="${xs}" y="${P.t}" width="${W-P.r-xs}" height="${ih}" fill="#f1f5f9" opacity=".75"/>
+        <line x1="${xs}" y1="${P.t}" x2="${xs}" y2="${P.t+ih}" stroke="#94a3b8" stroke-dasharray="4 4"/>`;
+  }
+  series.forEach(s => {
+    const pts = s.data.map((v,i)=> v==null?null:[x(i),y(v)]).filter(Boolean);
+    if(s.dash){
+      g += `<polyline points="${pts.map(p=>p.join(",")).join(" ")}" fill="none" stroke="${s.color}" stroke-width="2.4" stroke-dasharray="6 5" stroke-linecap="round"/>`;
+      const last = pts[pts.length-1];
+      g += `<circle cx="${last[0]}" cy="${last[1]}" r="4" fill="#fff" stroke="${s.color}" stroke-width="2.2"/>`;
+    } else {
+      const d = pts.map((p,i)=>(i?"L":"M")+p[0]+" "+p[1]).join(" ");
+      const area = `${d} L ${pts[pts.length-1][0]} ${P.t+ih} L ${pts[0][0]} ${P.t+ih} Z`;
+      g += `<path d="${area}" fill="${s.color}" opacity=".07"/>
+            <path d="${d}" fill="none" stroke="${s.color}" stroke-width="2.4" stroke-linejoin="round"/>`;
+    }
+    pts.forEach((p,i)=>{ if(s.data[i]==null) return;
+      g += `<circle cx="${p[0]}" cy="${p[1]}" r="3.2" fill="#fff" stroke="${s.color}" stroke-width="2"
+             ${tipAttr(labels[i]+": "+fmtRp(s.data[i]))}/>`; });
+  });
+  return svg(W,H,g);
+}
+
+function hbar(items, opts={}){
+  const W=520, rowH=34, P={l:opts.labelW||120,r:60,t:8,b:8};
+  const H=P.t+P.b+items.length*rowH;
+  const max = Math.max(...items.map(i=>i.value));
+  let g="";
+  items.forEach((it,i)=>{
+    const yy=P.t+i*rowH, bw=(it.value/max)*(W-P.l-P.r), bh=rowH-12;
+    g+=`<text x="${P.l-8}" y="${yy+bh/2+4}" text-anchor="end" font-size="11.5" fill="#334155">${esc(it.label)}</text>
+        <rect x="${P.l}" y="${yy}" width="${W-P.l-P.r}" height="${bh}" rx="5" fill="#f1f5f9"/>
+        <rect x="${P.l}" y="${yy}" width="${bw}" height="${bh}" rx="5" fill="${it.color||"#4f46e5"}"
+          ${tipAttr(it.label+": "+fmtRp(it.value)+(it.sub?" · "+it.sub:""))}/>
+        <text x="${P.l+bw+8}" y="${yy+bh/2+4}" font-size="11" font-weight="700" fill="#334155">${(it.value/1e6).toFixed(0)} jt</text>`;
+  });
+  return svg(W,H,g);
+}
+
+function donut(items, opts={}){
+  const W=360,H=278,cx=180,cy=120,R=90,r=58;
+  const total=items.reduce((s,i)=>s+i.value,0);
+  let a0=-Math.PI/2, g="";
+  items.forEach(it=>{
+    const a1=a0+(it.value/total)*Math.PI*2, big=(a1-a0)>Math.PI?1:0;
+    const p=(a,rr)=>[cx+rr*Math.cos(a),cy+rr*Math.sin(a)];
+    const [x0,y0]=p(a0,R),[x1,y1]=p(a1,R),[x2,y2]=p(a1,r),[x3,y3]=p(a0,r);
+    g+=`<path d="M${x0} ${y0} A${R} ${R} 0 ${big} 1 ${x1} ${y1} L${x2} ${y2} A${r} ${r} 0 ${big} 0 ${x3} ${y3} Z"
+         fill="${it.color}" stroke="#fff" stroke-width="1.5"
+         ${tipAttr(it.label+": "+fmtRp(it.value)+" ("+pct(it.value/total*100)+")")}/>`;
+    a0=a1;
+  });
+  g+=`<text x="${cx}" y="${cy-2}" text-anchor="middle" font-size="11" fill="#94a3b8">Total</text>
+      <text x="${cx}" y="${cy+16}" text-anchor="middle" font-size="14" font-weight="800" fill="#0f172a">${(total/1e9).toFixed(2)} M</text>`;
+  items.forEach((it,i)=>{
+    const col=i%2, row=Math.floor(i/2);
+    const xx=6+col*178, yy=214+row*17;
+    g+=`<rect x="${xx}" y="${yy}" width="9" height="9" rx="2" fill="${it.color}"/>
+        <text x="${xx+14}" y="${yy+8.5}" font-size="10" fill="#475569">${esc(it.label)}</text>`;
+  });
+  return svg(W,H,g);
+}
+
+function scatter(points, clusters){
+  const W=520,H=300,P={l:52,r:14,t:14,b:40};
+  const xs=points.map(p=>p[0]), ys=points.map(p=>p[1]);
+  const xmax=niceMax(Math.max(...xs)), ymax=niceMax(Math.max(...ys));
+  const x=v=>P.l+(v/xmax)*(W-P.l-P.r), y=v=>P.t+(H-P.t-P.b)-(v/ymax)*(H-P.t-P.b);
+  let g="";
+  for(let k=0;k<=4;k++){
+    g+=`<line x1="${P.l}" y1="${y(ymax*k/4)}" x2="${W-P.r}" y2="${y(ymax*k/4)}" stroke="#eef2f7"/>
+        <text x="${P.l-6}" y="${y(ymax*k/4)+3}" text-anchor="end" font-size="9.5" fill="#94a3b8">${(ymax*k/4/1e6).toFixed(0)} jt</text>`;
+  }
+  points.forEach(p=>{
+    g+=`<circle cx="${x(p[0])}" cy="${y(p[1])}" r="3" fill="${clusters.colors[p[2]]}" opacity=".55"
+        ${tipAttr("Recency "+Math.round(p[0])+" hari · Monetary "+fmtRp(p[1])+" · "+clusters.nama[p[2]])}/>`;
+  });
+  g+=`<text x="${(W+P.l)/2}" y="${H-10}" text-anchor="middle" font-size="10" fill="#64748b">Recency (hari sejak transaksi terakhir)</text>
+      <text x="12" y="${(H)/2}" font-size="10" fill="#64748b" transform="rotate(-90 12 ${H/2})" text-anchor="middle">Monetary (Rp)</text>`;
+  clusters.nama.forEach((n,i)=>{
+    const pendek = n.replace("Pelanggan ","").replace("Bernilai ","");
+    g+=`<rect x="${P.l+i*112}" y="2" width="9" height="9" rx="2" fill="${clusters.colors[i]}"/>
+        <text x="${P.l+14+i*112}" y="10" font-size="10" fill="#475569">${esc(pendek)}</text>`;
+  });
+  return svg(W,H,g);
+}
+
+function choropleth(geo, values){
+  const W=760,H=330;
+  let minLon=95,maxLon=141.2,minLat=-11.2,maxLat=6.2;
+  const px=(lon)=> (lon-minLon)/(maxLon-minLon)*(W-20)+10;
+  const py=(lat)=> (maxLat-lat)/(maxLat-minLat)*(H-20)+10;
+  const max=Math.max(...Object.values(values));
+  const color=v=>{
+    if(!v) return "#eef2f7";
+    const t=Math.sqrt(v/max);
+    const c1=[224,231,255], c2=[49,46,129];
+    const mix=c1.map((c,i)=>Math.round(c+(c2[i]-c)*t));
+    return `rgb(${mix.join(",")})`;
+  };
+  let g="";
+  geo.features.forEach(f=>{
+    const nm=f.properties.state, v=values[nm]||0;
+    const polys = f.geometry.type==="Polygon" ? [f.geometry.coordinates] : f.geometry.coordinates;
+    let d="";
+    polys.forEach(poly=>{
+      poly.forEach(ring=>{
+        ring.forEach((c,i)=>{ d += (i?"L":"M")+px(c[0]).toFixed(1)+" "+py(c[1]).toFixed(1); });
+        d+="Z";
+      });
+    });
+    g+=`<path d="${d}" fill="${color(v)}" stroke="#fff" stroke-width=".7" fill-rule="evenodd"
+        ${tipAttr(nm+": "+(v?fmtRp(v):"tidak ada transaksi"))}/>`;
+  });
+  return svg(W,H,g);
+}
+
+/* ---------- render dashboard ---------- */
+function renderKPI(){
+  const rows=state.rows, done=rows.filter(r=>r.Status_Transaksi!=="Dibatalkan");
+  const total=done.reduce((s,r)=>s+r.Total_Penjualan,0);
+  const profit=done.reduce((s,r)=>s+r.Profit,0);
+  const qty=done.reduce((s,r)=>s+r.Qty,0);
+  const cust=new Set(rows.map(r=>r.Nama_Pelanggan)).size;
+  const avg=total/Math.max(1,done.length);
+  const margin=total?profit/total*100:0;
+  const batal=rows.filter(r=>r.Status_Transaksi==="Dibatalkan").length;
+  const bl=bulanan(rows); const last=bl[bl.length-1], prev=bl[bl.length-2];
+  const growth=prev? (last.total-prev.total)/prev.total*100 : 0;
+  const items=[
+    ["Total Penjualan", fmtRp(total), "selesai + diproses + dikirim", ""],
+    ["Total Profit", fmtRp(profit), "margin "+pct(margin), ""],
+    ["Transaksi", fmtNum(rows.length), fmtNum(batal)+" dibatalkan", ""],
+    ["Unit Terjual", fmtNum(qty)+" pcs", "rata "+(qty/Math.max(1,done.length)).toFixed(1).replace(".",",")+" pcs/trx", ""],
+    ["Pelanggan Unik", fmtNum(cust), "rata "+fmtRp(avg)+"/trx", ""],
+    ["Pertumbuhan Bulan Terakhir", (growth>=0?"+":"")+pct(growth),
+      (growth>=0?"naik":"turun")+" vs bulan sebelumnya", growth>=0?"up":"down"]
+  ];
+  document.getElementById("kpi").innerHTML = items.map(([l,v,s,cls])=>`
+    <div class="card kpi"><div class="lbl">${l}</div>
+      <div class="val ${cls}">${v}</div><div class="delta">${s}</div></div>`).join("");
+}
+
+function renderLine(){
+  const fc=DATA.forecast, bl=bulanan(state.rows);
+  const labels=bl.map(b=>b.key);
+  const actual=bl.map(b=>b.total);
+  const proj=new Array(labels.length-1).fill(null).concat([actual[actual.length-1]]);
+  fc.label_prediksi.forEach((lb,i)=>{ labels.push(lb); actual.push(null); proj.push(fc.prediksi[i]); });
+  document.getElementById("chart-line").innerHTML = lineChart(labels,[
+    {data:actual,color:"#4f46e5"},
+    {data:proj,color:"#0ea5e9",dash:true}
+  ],{splitIndex:bl.length-3});
+  document.getElementById("fc-meta").textContent =
+    `Model: ${fc.metode_terpilih} · MAPE uji ${fc.mape_uji}% · MAPE backtest ${fc.mape_backtest}%`;
+  document.getElementById("fc-note").innerHTML =
+    `Model terpilih dari ${fc.kandidat.length} kandidat karena MAPE uji terendah (${fc.mape_uji}%). `+
+    `Backtest rolling-origin 4 titik asal memberi MAPE rata-rata ${fc.mape_backtest}%, jadi galat perkiraan realistis ±${Math.round(fc.mape_backtest)}%.`;
+}
+
+function renderDonut(){
+  const colors=["#4f46e5","#0ea5e9","#14b8a6","#f59e0b","#ec4899"];
+  const singkat={"Kesehatan & Kecantikan":"Kesehatan","Fashion & Aksesoris":"Fashion",
+                 "Makanan & Minuman":"Makanan","Rumah Tangga":"Rumah Tangga","Elektronik":"Elektronik"};
+  const items=agg(state.rows,"Kategori_Produk").map((k,i)=>({label:singkat[k.key]||k.key,value:k.total,color:colors[i%5]}));
+  document.getElementById("chart-donut").innerHTML=donut(items);
+}
+function renderKota(){
+  const items=agg(state.rows,"Kota").map(k=>({label:k.key,value:k.total,sub:fmtNum(k.trx)+" trx"}));
+  document.getElementById("chart-kota").innerHTML=hbar(items,{labelW:110});
+}
+function renderChannel(){
+  const items=agg(state.rows,"Channel_Penjualan").map((k,i)=>({
+    label:k.key,value:k.total,color:["#4f46e5","#6366f1","#0ea5e9","#14b8a6","#94a3b8"][i%5],
+    sub:fmtNum(k.trx)+" trx"}));
+  document.getElementById("chart-channel").innerHTML=hbar(items,{labelW:118});
+}
+function renderMap(){
+  const perKota=Object.fromEntries(agg(state.rows,"Kota").map(k=>[k.key,k.total]));
+  const values={};
+  Object.entries(DATA.kota_provinsi).forEach(([kota,prov])=>{
+    if(perKota[kota]) values[prov]=(values[prov]||0)+perKota[kota];
+  });
+  document.getElementById("chart-map").innerHTML=choropleth(DATA.geojson,values);
+  const max=Math.max(...Object.values(values));
+  document.getElementById("map-legend").innerHTML =
+    `<span><span class="dot" style="background:#eef2f7"></span>tanpa data</span>`+
+    [0.25,0.5,0.75,1].map(t=>{
+      const c1=[224,231,255],c2=[49,46,129];
+      const m=c1.map((c,i)=>Math.round(c+(c2[i]-c)*t));
+      return `<span><span class="dot" style="background:rgb(${m.join(",")})"></span>Rp ${(max*t/1e9).toFixed(2).replace(".",",")} M</span>`;
+    }).join("");
+}
+function renderScatter(){
+  const cl=DATA.cluster;
+  document.getElementById("chart-scatter").innerHTML=scatter(cl.titik,{nama:cl.nama,colors:cl.colors});
+}
+function renderClusterTable(){
+  const rows=DATA.cluster.profil;
+  document.getElementById("tbl-cluster").innerHTML =
+    `<thead><tr><th>Segmen</th><th class="num">Pelanggan</th><th class="num">Recency</th>
+      <th class="num">Frequency</th><th class="num">Monetary</th><th class="num">Porsi Penjualan</th></tr></thead><tbody>`+
+    rows.map(r=>`<tr><td><span class="pill" style="background:${DATA.cluster.colors[r.Cluster]}22;color:${DATA.cluster.colors[r.Cluster]}">${esc(r.segmen)}</span></td>
+      <td class="num">${fmtNum(r.jumlah)}</td><td class="num">${r.recency_rata.toFixed(1)} hari</td>
+      <td class="num">${r.frequency_rata.toFixed(1)}</td><td class="num">${fmtRp(r.monetary_rata)}</td>
+      <td class="num">${pct(r.porsi_penjualan_pct)}</td></tr>`).join("")+`</tbody>`;
+}
+function renderModelTable(){
+  const fc=DATA.forecast;
+  document.getElementById("tbl-model").innerHTML =
+    `<thead><tr><th>Metode</th><th class="num">MAPE uji</th><th class="num">Prediksi Nov 2026</th></tr></thead><tbody>`+
+    fc.kandidat.map(k=>`<tr><td>${esc(k.metode)}${k.metode===fc.metode_terpilih?' <span class="badge b-ok">terpilih</span>':''}</td>
+      <td class="num">${k.mape}%</td><td class="num">${fmtRp(k.prediksi[0])}</td></tr>`).join("")+
+    `</tbody>`;
+}
+
+/* ---------- tabel transaksi ---------- */
+function filtered(){
+  const f=state.filter, q=f.q.toLowerCase();
+  return state.rows.filter(r=>
+    (!f.kota||r.Kota===f.kota)&&(!f.kategori||r.Kategori_Produk===f.kategori)&&
+    (!f.status||r.Status_Transaksi===f.status)&&(!f.channel||r.Channel_Penjualan===f.channel)&&
+    (!q||r.ID_Transaksi.toLowerCase().includes(q)||r.Nama_Pelanggan.toLowerCase().includes(q)||
+      r.Nama_Produk.toLowerCase().includes(q)));
+}
+function badgeStatus(s){
+  const c = s==="Selesai"?"b-ok":s==="Dibatalkan"?"b-bad":s==="Dikirim"?"b-info":"b-warn";
+  return `<span class="badge ${c}">${s}</span>`;
+}
+function renderTrx(){
+  const rows=filtered(), pp=state.perPage, pages=Math.max(1,Math.ceil(rows.length/pp));
+  state.page=Math.min(state.page,pages);
+  const slice=rows.slice((state.page-1)*pp,state.page*pp);
+  document.getElementById("tbl-trx").innerHTML =
+    `<thead><tr><th>ID</th><th>Tanggal</th><th>Pelanggan</th><th>Kota</th><th>Produk</th>
+      <th class="num">Qty</th><th class="num">Total</th><th class="num">Profit</th><th>Status</th></tr></thead><tbody>`+
+    slice.map(r=>`<tr${r._baru?' style="background:#eef2ff"':''}>
+      <td>${esc(r.ID_Transaksi)}</td><td>${String(r.Tanggal).slice(0,10)}</td>
+      <td>${esc(r.Nama_Pelanggan)}</td><td>${esc(r.Kota)}</td><td>${esc(r.Nama_Produk)}</td>
+      <td class="num">${r.Qty}</td><td class="num">${fmtRp(r.Total_Penjualan)}</td>
+      <td class="num">${fmtRp(r.Profit)}</td><td>${badgeStatus(r.Status_Transaksi)}</td></tr>`).join("")+
+    `</tbody>`;
+  document.getElementById("trx-count").textContent=fmtNum(rows.length)+" baris";
+  document.getElementById("page-info").textContent=`Halaman ${state.page} / ${pages}`;
+  document.getElementById("trx-meta").textContent=
+    `Total ${fmtNum(state.rows.length)} transaksi · filter aktif ${fmtNum(rows.length)} baris · nilai ${fmtRp(rows.reduce((s,r)=>s+r.Total_Penjualan,0))}`;
+}
+
+/* ---------- tabel produk ---------- */
+function renderProduk(){
+  const pm=document.getElementById("produk-meta");
+  if(pm) pm.textContent=`${fmtNum(state.produk.length)} SKU aktif beserta margin per unit`;
+  document.getElementById("tbl-produk").innerHTML =
+    `<thead><tr><th>Kode</th><th>Kategori</th><th>Produk</th><th class="num">Harga</th>
+      <th class="num">HPP</th><th class="num">Margin Unit</th><th class="num">Margin %</th><th>Bar</th></tr></thead><tbody>`+
+    state.produk.map(p=>{
+      const m=Number(p["Margin (%)"])*100;
+      return `<tr><td>${esc(p.Kode_Produk)}</td><td>${esc(p.Kategori_Produk)}</td>
+        <td>${esc(p.Nama_Produk)}</td><td class="num">${fmtRp(p["Harga_Satuan (Rp)"])}</td>
+        <td class="num">${fmtRp(p["HPP_Satuan (Rp)"])}</td><td class="num">${fmtRp(p["Margin_Unit (Rp)"])}</td>
+        <td class="num">${pct(m)}</td>
+        <td><svg width="90" height="8"><rect width="90" height="8" rx="4" fill="#eef2f7"/>
+          <rect width="${Math.min(90,m*2)}" height="8" rx="4" fill="${m>38?"#059669":m>33?"#0ea5e9":"#f59e0b"}"/></svg></td></tr>`;
+    }).join("")+`</tbody>`;
+}
+
+/* ---------- init ---------- */
+function opts(sel, vals, label){
+  const el=document.getElementById(sel);
+  if(!el) return;
+  el.innerHTML = vals.map(v=>`<option value="${esc(v)}">${esc(v)}</option>`).join("");
+}
+function initSelects(){
+  const uniq=k=>[...new Set(state.rows.map(r=>r[k]))].sort();
+  const kota=uniq("Kota"), kat=uniq("Kategori_Produk"), ch=uniq("Channel_Penjualan"),
+        seg=uniq("Segmen_Pelanggan"), bayar=uniq("Metode_Pembayaran"), st=uniq("Status_Transaksi");
+  ["sel-kota","f-kota"].forEach(s=>opts(s,kota));
+  ["sel-channel","f-channel"].forEach(s=>opts(s,ch));
+  ["sel-segmen"].forEach(s=>opts(s,seg));
+  ["sel-bayar"].forEach(s=>opts(s,bayar));
+  ["sel-status","f-status"].forEach(s=>opts(s,st));
+  ["f-kategori"].forEach(s=>opts(s,kat));
+  ["sel-kat-produk"].forEach(s=>opts(s,[...new Set(state.produk.map(p=>p.Kategori_Produk))]));
+  document.getElementById("sel-produk").innerHTML=state.produk.map(p=>
+    `<option value="${esc(p.Nama_Produk)}">${esc(p.Nama_Produk)} — ${esc(p.Kategori_Produk)}</option>`).join("");
+  document.getElementById("f-kota").insertAdjacentHTML("afterbegin",'<option value="">Semua kota</option>');
+  document.getElementById("f-kategori").insertAdjacentHTML("afterbegin",'<option value="">Semua kategori</option>');
+  document.getElementById("f-status").insertAdjacentHTML("afterbegin",'<option value="">Semua status</option>');
+  document.getElementById("f-channel").insertAdjacentHTML("afterbegin",'<option value="">Semua channel</option>');
+  document.getElementById("f-kota").value="";
+}
+
+document.getElementById("tabs").addEventListener("click", e=>{
+  const b=e.target.closest(".tab"); if(!b) return;
+  document.querySelectorAll(".tab").forEach(t=>t.classList.toggle("on",t===b));
+  ["dashboard","transaksi","produk"].forEach(t=>{
+    document.getElementById("tab-"+t).hidden = (t!==b.dataset.tab);
+  });
+  state.tab=b.dataset.tab;
+});
+
+document.getElementById("form-trx").addEventListener("submit", e=>{
+  e.preventDefault();
+  const fd=new FormData(e.target);
+  const produk=state.produk.find(p=>p.Nama_Produk===fd.get("Nama_Produk"));
+  if(!produk){ alert("Produk tidak ditemukan di master produk."); return; }
+  const qty=Number(fd.get("Qty")), diskon=Number(fd.get("Diskon_Pct")||0)/100;
+  const harga=Number(produk["Harga_Satuan (Rp)"]), hpp=Number(produk["HPP_Satuan (Rp)"]);
+  const subtotal=qty*harga, nilaiDiskon=Math.round(subtotal*diskon), total=subtotal-nilaiDiskon;
+  const tgl=fd.get("Tanggal"), bln=String(tgl).slice(0,7).replace("-","");
+  const n=state.rows.filter(r=>String(r.ID_Transaksi).includes(bln)).length+1;
+  state.rows.push({
+    ID_Transaksi:`TRX-${bln}-${String(n).padStart(5,"0")}`, Tanggal:tgl,
+    Nama_Pelanggan:fd.get("Nama_Pelanggan"), Segmen_Pelanggan:fd.get("Segmen_Pelanggan"),
+    Kota:fd.get("Kota"), Channel_Penjualan:fd.get("Channel_Penjualan"),
+    Kategori_Produk:produk.Kategori_Produk, Nama_Produk:produk.Nama_Produk,
+    Qty:qty, Harga_Satuan:harga, Diskon_Pct:Number(fd.get("Diskon_Pct")||0), Subtotal:subtotal,
+    Nilai_Diskon:nilaiDiskon, Total_Penjualan:total, HPP_Satuan:hpp,
+    Profit:total-qty*hpp, Metode_Pembayaran:fd.get("Metode_Pembayaran"),
+    Status_Transaksi:fd.get("Status_Transaksi"), _baru:true
+  });
+  e.target.reset();
+  const msg=document.getElementById("form-msg");
+  msg.hidden=false;
+  msg.textContent=`Transaksi tersimpan: ${fmtRp(total)} (profit ${fmtRp(total-qty*hpp)}). Total baris kini ${fmtNum(state.rows.length)}.`;
+  state.page=1; state.filter={q:"",kota:"",kategori:"",status:"",channel:""};
+  document.getElementById("q").value="";
+  renderAll(); renderTrx();
+});
+
+document.getElementById("form-produk").addEventListener("submit", e=>{
+  e.preventDefault();
+  const fd=new FormData(e.target);
+  const harga=Number(fd.get("harga")), hpp=Number(fd.get("hpp"));
+  if(hpp>=harga){ alert("HPP harus lebih kecil dari harga jual."); return; }
+  const margin=harga-hpp;
+  state.produk.push({Kode_Produk:fd.get("Kode_Produk"),Kategori_Produk:fd.get("Kategori_Produk"),
+    Nama_Produk:fd.get("Nama_Produk"),"Harga_Satuan (Rp)":harga,"HPP_Satuan (Rp)":hpp,
+    "Margin_Unit (Rp)":margin,"Margin (%)":margin/harga});
+  e.target.reset();
+  const msg=document.getElementById("produk-msg");
+  msg.hidden=false; msg.textContent=`Produk ditambahkan. Total SKU kini ${state.produk.length}.`;
+  renderProduk(); initSelects();
+});
+
+["q","f-kota","f-kategori","f-status","f-channel"].forEach(id=>{
+  const el=document.getElementById(id);
+  el.addEventListener("input", ()=>{
+    state.filter.q=document.getElementById("q").value;
+    state.filter.kota=document.getElementById("f-kota").value;
+    state.filter.kategori=document.getElementById("f-kategori").value;
+    state.filter.status=document.getElementById("f-status").value;
+    state.filter.channel=document.getElementById("f-channel").value;
+    state.page=1; renderTrx();
+  });
+});
+document.getElementById("btn-reset").addEventListener("click",()=>{
+  document.getElementById("q").value="";
+  ["f-kota","f-kategori","f-status","f-channel"].forEach(id=>document.getElementById(id).value="");
+  state.filter={q:"",kota:"",kategori:"",status:"",channel:""}; state.page=1; renderTrx();
+});
+document.getElementById("prev").addEventListener("click",()=>{ state.page=Math.max(1,state.page-1); renderTrx(); });
+document.getElementById("next").addEventListener("click",()=>{
+  const pages=Math.ceil(filtered().length/state.perPage); state.page=Math.min(pages,state.page+1); renderTrx(); });
+document.getElementById("per-page").addEventListener("change",e=>{ state.perPage=Number(e.target.value); state.page=1; renderTrx(); });
+
+function renderAll(){
+  renderKPI(); renderLine(); renderDonut(); renderKota(); renderChannel();
+  renderMap(); renderScatter(); renderClusterTable(); renderModelTable(); renderProduk();
+}
+initSelects(); renderAll(); renderTrx();
+</script>
+</body>
+</html>

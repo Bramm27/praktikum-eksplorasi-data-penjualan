@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id"><head><meta charset="utf-8">
+<style>
+body{margin:0;background:#eef1f6;font-family:"Inter","Segoe UI",system-ui,sans-serif;padding:26px}
+.box{max-width:1180px;margin:0 auto;background:#fff;border-radius:16px;padding:22px 24px;
+  box-shadow:0 10px 30px -18px rgba(15,23,42,.35)}
+h2{margin:0 0 4px;font-size:16px;color:#0f172a}
+p{margin:0 0 14px;font-size:12.5px;color:#64748b}
+.term{background:#0b1120;border-radius:12px;padding:16px 18px;overflow:hidden;
+  box-shadow:inset 0 0 0 1px #1e293b}
+.bar{display:flex;gap:7px;margin-bottom:12px}
+.bar i{width:10px;height:10px;border-radius:50%;display:block}
+pre{margin:0;color:#e2e8f0;font-family:"JetBrains Mono","Fira Code",Consolas,"DejaVu Sans Mono",monospace;
+  font-size:12.2px;line-height:1.62;white-space:pre-wrap;word-break:break-word}
+.cmd{color:#7dd3fc;font-weight:700}
+.err{color:#fca5a5}
+.meta{font-size:11px;color:#94a3b8;margin-top:10px}
+</style></head><body>
+<div class="box">
+  <h2>Langkah 2 — Memeriksa struktur dataset</h2>
+  <p>Dua sheet: Data_Transaksi (10.000 baris, 18 kolom) dan Master_Produk (25 SKU).</p>
+  <div class="term">
+    <div class="bar"><i style="background:#ef4444"></i><i style="background:#f59e0b"></i><i style="background:#22c55e"></i></div>
+    <pre><span class="cmd">$ .venv/bin/python -c "baca dataset Excel"</span>
+file     : Dataset_Transaksi_Penjualan_10000_1795569666632_1795589876097.xlsx
+ukuran   : 1.20 MB
+sheet    : ['Data_Transaksi', 'Master_Produk']
+
+[Data_Transaksi] shape=(10000, 18)
+       ID_Transaksi    Tanggal   Nama_Pelanggan Segmen_Pelanggan      Kota Channel_Penjualan        Kategori_Produk            Nama_Produk  Qty  Harga_Satuan  Diskon_Pct  Subtotal  Nilai_Diskon  Total_Penjualan  HPP_Satuan  Profit Metode_Pembayaran Status_Transaksi
+0  TRX-202501-00001 2025-01-01    Hendra Wibowo          Reguler    Malang         Tokopedia  Kesehatan &amp; Kecant...  Multivitamin Haria...    2        130000        0.00    260000             0           260000       62000  136000          E-Wallet          Selesai
+1  TRX-202501-00002 2025-01-01    Lestari Utomo      Member Gold   Bandung            Shopee    Fashion &amp; Aksesoris  Tas Ransel Laptop ...    1        325000        0.10    325000         32500           292500      180000  112500              QRIS          Selesai
+2  TRX-202501-00003 2025-01-01     Gita Permata          Reguler   Jakarta       TikTok Shop             Elektronik  Powerbank Fast Cha...    1        285000        0.00    285000             0           285000      175000  110000   Virtual Account          Selesai
+3  TRX-202501-00004 2025-01-01  Tiara Anggraini          Reguler  Surabaya       TikTok Shop    Fashion &amp; Aksesoris  Tas Ransel Laptop ...    1        325000        0.00    325000             0           325000      180000  145000          E-Wallet       Dibatalkan
+4  TRX-202501-00005 2025-01-01  Pratama Suryadi    Member Silver  Semarang      Toko Offline      Makanan &amp; Minuman  Madu Hutan Murni N...    1        160000        0.05    160000          8000           152000       90000   62000          E-Wallet          Selesai
+5  TRX-202501-00006 2025-01-01      Ratna Hakim      Member Gold  Makassar     Website Resmi  Kesehatan &amp; Kecant...  Serum Vitamin C Br...    1        149000        0.10    149000         14900           134100       65000   69100   Virtual Account          Selesai
+
+[dtype tiap kolom]
+ID_Transaksi                    str
+Tanggal              datetime64[us]
+Nama_Pelanggan                  str
+Segmen_Pelanggan                str
+Kota                            str
+Channel_Penjualan               str
+Kategori_Produk                 str
+Nama_Produk                     str
+Qty                           int64
+Harga_Satuan                  int64
+Diskon_Pct                  float64
+Subtotal                      int64
+Nilai_Diskon                  int64
+Total_Penjualan               int64
+HPP_Satuan                    int64
+Profit                        int64
+Metode_Pembayaran               str
+Status_Transaksi                str
+
+[Master_Produk] shape=(25, 7)
+  Kode_Produk      Kategori_Produk                    Nama_Produk  Harga_Satuan (Rp)  HPP_Satuan (Rp)  Margin_Unit (Rp)  Margin (%)
+0     PRD-001           Elektronik       Earbuds Wireless TWS Pro             349000           210000            139000    0.398281
+1     PRD-002           Elektronik     Smartwatch Fitness Tracker             599000           370000            229000    0.382304
+2     PRD-003           Elektronik  Powerbank Fast Charging 20...             285000           175000            110000    0.385965
+3     PRD-004           Elektronik     Speaker Bluetooth Portable             420000           255000            165000    0.392857
+4     PRD-005           Elektronik       Mouse Wireless Ergonomis             165000            95000             70000    0.424242
+5     PRD-006  Fashion &amp; Aksesoris       Kemeja Katun Oxford Pria             215000           115000            100000    0.465116</pre>
+  </div>
+  <div class="meta">Keluaran terminal dari sesi praktikum.</div>
+</div>
+</body></html>
